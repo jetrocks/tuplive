@@ -389,7 +389,7 @@
 				<h4>NOW STREAMING: </h4>
 				<h1>COS TALENT SEARCH 2017	 </h1>
 				<h4 style="margin-left:900px; margin-top:-20px;	">September 4, 2017 </h4>
-				<video class="video" autoplay  muted >
+				<video class="video" autoplay  muted loop >
 					<source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
 					Your browser does not support HTML5 video.
 				</video>
