@@ -52,5 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'TupLive';
 $route['course/create_course'] = 'course/create_course';
 $route['login'] = 'TupLive/login';
+$route['logged'] = 'TupLive/logged';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
