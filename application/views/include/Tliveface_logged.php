@@ -194,8 +194,8 @@
 			display: block;
 			transition: .5s ease;
 			backface-visibility: hidden;
-			// width:1080px; 
-			// height:600px;
+			width:1080px; 
+			height:600px;
 			}
 	.container2:hover .middle {
 			opacity: 1;
@@ -300,7 +300,7 @@
 	<div class="row navigation" id="da-thumbs" style="z-index:1;" >
 		
 		<div class="col-md-2" style="margin-left: -30px;">
-			<a href="#">
+			<a href="<?php echo base_url(); ?>">
 				
 					HOME
 				
@@ -419,7 +419,7 @@
 				<h4>NOW STREAMING: </h4>
 				<h1>COS TALENT SEARCH 2017	 </h1>
 				<h4 style="margin-left:900px; margin-top:-20px;	">September 4, 2017 </h4>
-				<video class="video" id="video" width="400" height="300" autoplay  muted >
+				<video class="video" id="video" autoplay  muted loop >
 					<!-- <source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
 					 Your browser does not support HTML5 video. -->
 				</video>
