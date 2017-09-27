@@ -300,7 +300,7 @@
 	<div class="row navigation" id="da-thumbs" style="z-index:1;" >
 		
 		<div class="col-md-2" style="margin-left: -30px;">
-			<a href="<?php echo base_url(); ?>">
+			<a href="<?php echo base_url(logged); ?>">
 				
 					HOME
 				
@@ -340,7 +340,7 @@
 		</div>
 		
 		<div class="col-md-2"  >
-		<a href="#">
+		<a href="<?php echo base_url(); ?>">
 				
 					LOG OUT
 				
