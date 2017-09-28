@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<title>TUP Live!</title>
-	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0" />
 	<link href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/bootstrap-theme.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/custom.css'); ?>" rel="stylesheet" />
 
 	<script src="<?php echo base_url('bootstrap/js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?> "></script>
+	
 	
 	<style>
 	
@@ -85,7 +86,7 @@
 		width: 240px;
 		height: 60px;
 		padding: 17px ;
-		transition: font-size 1s;
+		transition: font-size 1s, padding 1s;
 	}
 	
 	
@@ -114,7 +115,7 @@
 	
 	.bod{
 		
-		background-color: #202020;
+		background-color: #101010;
 		font-family: Tahoma, Geneva, sans-serif;
 		color: white;
 	}
@@ -147,7 +148,7 @@
 		color: #dedede;
 		font-size: 20px;
 		font-style: italic;
-		transition: font-size 1s;
+		transition: font-size 1s, margin-left 1s;
 	}
 	.text a:hover{
 		color: #dedede;
@@ -270,7 +271,7 @@
 	<div class="row navigation" id="da-thumbs" style="z-index:1;" >
 		
 		<div class="col-md-2" style="margin-left: -30px;">
-			<a href="#">
+			<a href="<?php echo base_url(); ?>">
 				
 					HOME
 				
@@ -302,7 +303,7 @@
 		</div>
 		
 		<div class="col-md-2"  >
-		<a href="#">
+		<a href="<?php echo base_url('login'); ?>">
 				
 					LOGIN
 				
@@ -336,49 +337,7 @@
 	
 	
 		<div class="col-md-1 side">
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			
 		</div>
 		
 		<div class="col-md-10" style="box-shadow: 0 15px 25px 5px rgba(242,242,242,0.5);" >
@@ -389,9 +348,9 @@
 				<h4>NOW STREAMING: </h4>
 				<h1>COS TALENT SEARCH 2017	 </h1>
 				<h4 style="margin-left:900px; margin-top:-20px;	">September 4, 2017 </h4>
-				<video class="video" autoplay  muted >
+				<video class="video" id="video" autoplay  muted loop >
 					<source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
-					Your browser does not support HTML5 video.
+					 Your browser does not support HTML5 video. 
 				</video>
 				<div class="middle">
 				<div class="text">Wanna be part of the nation?<br /><br /> &emsp;&emsp;&emsp; <a href="#"> JOIN NA! </a></div>
@@ -418,48 +377,7 @@
 		
 		<div class="col-md-1 side">
 			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+			
 		</div>
 	
 
@@ -534,7 +452,6 @@
 	
 	
 </div>
-
 
 
 
