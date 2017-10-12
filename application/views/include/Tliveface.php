@@ -6,128 +6,64 @@
 	<link href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/bootstrap-theme.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/custom.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo base_url('bootstrap/css/components.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo base_url('bootstrap/css/icons.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo base_url('bootstrap/css/style.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo base_url('bootstrap/css/response.css'); ?>" rel="stylesheet" />
+	<link rel="shortcut icon" href="<?php echo base_url('bootstrap/css/logo_1.ico'); ?>">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
 	<script src="<?php echo base_url('bootstrap/js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?> "></script>
+	<script src="<?php echo base_url('bootstrap/js/jquery-1.8.3.min.js');?> "></script>
+	<script src="<?php echo base_url('bootstrap/js/jquery-ui.min.js');?> "></script>
+	<script src="<?php echo base_url('bootstrap/js/responsee.js');?> "></script>
+	<script src="<?php echo base_url('bootstrap/js/index.js');?> "></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script type="text/javascript">
+         jQuery(document).ready(function($) {	  
+           $("#owl-demo").owlCarousel({		
+           	navigation : true,
+           	slideSpeed : 300,
+           	paginationSpeed : 400,
+           	autoPlay : true,
+           	singleItem:true
+           });
+           $("#owl-demo2").owlCarousel({
+        		items : 4,
+           	lazyLoad : true,
+           	autoPlay : true,
+           	navigation : true,
+           	pagination : false
+           });
+         });	 
+      </script>
 	
-	
-	<style>
-	
-	
-	
-	.header{
-		
-		background-color: #101010;
-		font-family: Tahoma, Geneva, sans-serif;
-		color: white;
-	}
-	
-	.header button{
-		box-shadow: 0 8px 16px 0 rgba(242,242,242,0.5);
-		width: 80px;
-		height: 40px;
-		border-radius: 8px;
-		background-color: #c51e3a;
-		border: none;
-		color: #dedede;
-		padding: 8px 16px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		-webkit-transition-duration: 0.4s; /* Safari */
-		transition-duration: 0.2s;
-		cursor: pointer;
-	}
-	
-	.header button:hover{
-		box-shadow: 0 8px 16px 8px rgba(197,30,58,0.9);
-		background-color: #dedede;
-		color: #c51e3a;
-	}
-	
-	.header button span {
-		cursor: pointer;
-		display: inline-block;
-		position: relative;
-		transition: 0.2s ease;
-	}
 
-	.header button span:after {
-		content: '\00bb';
-		position: absolute;
-		opacity: 0;
-		top: 0;
-		right: -20px;
-		transition: 0.2s ease;
-	}
+</head>
+<style>
+.logo{
+	width: 100px;
+	height: 100px;
+}
+.logo2{
+	width: 200px;
+	height: 50px;
+}
+body{
+	background-color: #1a1a1a;
+	
+}
+.headcolor{
+	background-color: #0d0d0d;
+	box-shadow: 0px 10px 5px #1a1a1a;
+	
+}
+.topp{
+	z-index: 1;
+}
 
-	.header button:hover span {
-		padding-right: 25px;
-	}
-
-	.header button:hover span:after {
-		opacity: 1;
-		right: 0;
-	}
-	
-	.navigation{
-		
-		background-color: #dedede;
-		font-family: Tahoma, Geneva, sans-serif;
-		color: white;
-	}
-	
-	
-	.navigation a{
-		font-size: 15px;
-		color: #c51e3a;
-		width: 240px;
-		height: 60px;
-		padding: 17px ;
-		transition: font-size 1s, padding 1s;
-	}
-	
-	
-	.navigation a:link, a:visited {
-		
-		background-color: #dedede;
-		color: #c51e3a;
-		border: 2px solid #c51e3a;
-		// padding: 10px 10px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		}
-
-	 .navigation a:hover, a:active {
-		font-size: 25px;
-		background-color: #c51e3a;
-		color: #dedede;
-		padding: 10px;
-		transition: 0.5s ease;
-		}
-	
-	.shadow{
-		box-shadow: 10px 10px 5px grey;
-	}
-	
-	.bod{
-		
-		background-color: #101010;
-		font-family: Tahoma, Geneva, sans-serif;
-		color: white;
-	}
-	
-	
-	
-	.bod .side{
-		background-color: #101010;
-		
-	}
-	
-	.middle {
+.middle {
 			transition: .5s ease;
 			opacity: 0;
 			position: absolute;
@@ -148,12 +84,12 @@
 		color: #dedede;
 		font-size: 20px;
 		font-style: italic;
-		transition: font-size 1s, margin-left 1s;
+		transition: font-size 1s;
 	}
 	.text a:hover{
 		color: #dedede;
-		font-size: 40px;
-		margin-left: -25px;
+		font-size: 25px;
+		
 		
 	}
 			
@@ -165,8 +101,6 @@
 			display: block;
 			transition: .5s ease;
 			backface-visibility: hidden;
-			width:1080px; 
-			height:600px;
 			}
 	.container2:hover .middle {
 			opacity: 1;
@@ -174,290 +108,98 @@
 			
 	.container2 {
 			position: relative;
+			
 			}
-	
-	.foot{
-		
-		background-color: #202020;
-		font-family: Tahoma, Geneva, sans-serif;
-		color: white;
-	}
-	.foot a{
-		color: white;
-		
-	}
-	
-	
-	
-	</style>
-</head>
-<body>
 
-<div class="container-fluid" id="guide-template">
 
-	<!-- HEADER -->
 
-	<div class="row header">
-	
-		
-		<div class="col-md-4 header">
-		<br />
-		<img src="<?php echo base_url('TLimages/livelogo.png'); ?>" style="margin-left: 50px;" alt="TUP Live! Logo" height="100px" width="100px" />
-		<img src="<?php echo base_url('TLimages/livetitle.png'); ?>" style="margin-top:-50px;" alt="TUP Live! Logo" width="190px" />
-		<h6 style="margin-left: 150px; margin-top:-50px;">The Technological University of the Philippines'<br />Live Streaming Broadcasting Website</h6>
-		<br />
-		
-		</div>
-		
-		<div class="col-md-4 header" >
-		
-		
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		
-		
-		</div>
-		
-		<div class="col-md-4 header">
+</style>
+<body >
 
-			<div class="row">
-				<div class="col-md-6 header">
-		
-				<br />
-		
-				</div>
-			
-				<div class="col-md-6 header">
-		
-					<h6>	<a href="#" style="color: white;" >FAQs</a> | <a href="#" style="color: white;" >Login</a> | <a href="#" style="color: white;" >Mail</a> | <a href="#" style="color: white;" >Contact Us</a></h6>
-		
-				</div>
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-md-12 header">
-		
-					<input type="text" style="color:black;" size="40"  />
-		
-		
-					<button type="button"><span>FIND</span></button>
-		
-				</div>
-			
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-md-12 header">
-		
-					<h3 style="color: #1ca033; margin-left: 100px;">PH STRD TIME: 11:11:11 AM </h3>
-		
-				</div>
-			
-			</div>
-		
-		</div>
-		
-	</div>
+<div class="container">
+	<br />
 	
-	<!-- END OF HEADER -->
+	<header>
 	
-	<!-- NAVIGATION -->
-	<div class="row navigation" id="da-thumbs" style="z-index:1;" >
+		<!-- header -->
+		<div class="line topp">
+            <div class="box headcolor">
+               <div class="s-6 l-1">
+                  <img class="logo" src="<?php echo base_url('TLimages/livelogo.png'); ?>">
+               </div>
+			   <div class="s-6 l-4">
+                  <img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>">
+				  <h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website<h4>
+               </div>
+            </div>
+         </div>
+		 <!-- end of header -->
+		 
+		 
+		 <!-- navigation -->
+		 <div class="line">
+            <nav class="margin-bottom">
+               <p class="nav-text">MENU</p>
+               <div class="top-nav s-12 l-10">
+                  <ul>
+                     <li><a>Home</a></li>
+                     <li><a>Watchlist</a></li>
+					 <li><a>Community</a></li> 
+                     <li><a>About Us</a></li>
+					 <li><a href="#"  id="loginform" >Login</a>
+						<div class="login" >
+							<div class="arrow-up"></div>
+								<div class="formholder">
+									<div class="randompad">
+										<fieldset style="font-family: "Montserrat"">
+											<label name="email" style="color: black">Email</label>
+											<input type="email" value="example@example.com" />
+											<label name="password" style="color: black">Password</label>
+											<input type="password" />
+											<input type="submit" value="Login" />
+										</fieldset>
+									</div>
+								</div>
+						</div>
+					</li>
+					 
+					 <li><a>Join Us</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+		<!-- end of navigation -->
 		
-		<div class="col-md-2" style="margin-left: -30px;">
-			<a href="<?php echo base_url(); ?>">
-				
-					HOME
-				
-			</a>
-		</div>
-		
-		<div class="col-md-2"  >
-		<a href="#">
-				
-					WATCHLIST
-				
-			</a>
-		</div>
-		
-		<div class="col-md-2"  >
-		<a href="#">
-				
-					COMMUNITY
-				
-			</a>
-		</div>
-		
-		<div class="col-md-2"  >
-		<a href="#">
-				
-					ABOUT US
-				
-			</a>
-		</div>
-		
-		<div class="col-md-2"  >
-		<a href="<?php echo base_url('login'); ?>">
-				
-					LOGIN
-				
-			</a>
-		</div>
-		
-		<div class="col-md-2"  >
-		<a href="#">
-				
-					JOIN US
-				
-			</a>
-		</div>
-	</div>
-	
-	<!-- END OF NAVIGATION -->
-	
-	<!-- BODY -->
-	
-	<div class="row bod">
-			<div class="col-md-12 side" style="widhth: 1000px;">
-			<br/>
-			<br/>
-			
-			
-			
-			</div>
-		</div>
-	
-	<div class="row bod ">
-	
-	
-		<div class="col-md-1 side">
-			
-		</div>
-		
-		<div class="col-md-10" style="box-shadow: 0 15px 25px 5px rgba(242,242,242,0.5);" >
-			
-			<div class="row">
-			
-			<div class="col-md-12 container2">
-				<h4>NOW STREAMING: </h4>
-				<h1>COS TALENT SEARCH 2017	 </h1>
-				<h4 style="margin-left:900px; margin-top:-20px;	">September 4, 2017 </h4>
-				<video class="video" id="video" autoplay  muted loop >
-					<source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
-					 Your browser does not support HTML5 video. 
-				</video>
-				<div class="middle">
-				<div class="text">Wanna be part of the nation?<br /><br /> &emsp;&emsp;&emsp; <a href="#"> JOIN NA! </a></div>
-				</div>
-			</div>
-			
-			
-			</div>
-			
-			<div class="row">
-			<div class="col-md-12" style="background-color:#4d2027">
-				<h4 style="margin-left:800px;"><i>UP NEXT: USG ANNOUNCEMENT</i></h4>
-				<h5>
-					Uploader's Message:
-				</h5>
-				<br />
-				<br />
-				<br />
-				<br />
-			</div>
-			</div>
-			
-		</div>
-		
-		<div class="col-md-1 side">
-			<br />
-			
-		</div>
-	
+	</header>
 
 	
-	</div>
-	
-	<div class="row bod">
+
+
+
+
+
+
+<section>
+
+	<div class="box headcolor container2">
+		<h2>Now Streaming</h2>
 		
-		<div class="col-md-1 side">
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		</div>
-		
-		<div class="col-md-10 side">
-		<br/>
-		<hr>
-		<br/>
-		</div>
-		
-		<div class="col-md-1 side">
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+		<video class="video s-12 m-12 1-4" autoplay  muted loop >
+			<source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
+					 Your browser does not support HTML5 video.
+		</video>
+		<div class="middle">
+				<div align="center" class="text">Wanna be part of the nation?<br /><br /> <a href="#"> JOIN NA! </a></div>
 		</div>
 	</div>
-	
-	<!-- END OF BODY -->
-	
-	<!-- FOOTER -->
-	<div class="row foot">
-		<div class="col-md-1">
-		</div>
-		
-		<div class="col-md-2">
-			<h3 style="font-size:20px;">GENERAL</h3><br />
-			<a href="#"><h4>Home</h4></a>
-			<a href="#"><h4>Blog</h4></a>
-			<a href="#"><h4>Faq</h4></a>
-			<a href="#"><h4>Contact Us</h4></a>
-		</div>
-		
-		<div class="col-md-2">
-			<h3 style="font-size:20px;">KNOW US</h3><br />
-			<a href="#"><h4>About Us</h4></a>
-			<a href="#"><h4>Disclaimer</h4></a>
-			<a href="#"><h4>Terms and Conditions</h4></a>
-			<a href="#"><h4>Site Map</h4></a>
-		</div>
-		
-		<div class="col-md-2">
-			<h3 style="font-size:20px;">CONTACT US</h3><br />
-		</div>
-		
-		<div class="col-md-5">
-		</div>
-		
-	
-	</div>
-	
-	<div class="row">
-			<div class="col-md-12" style="background-color: #101010;">
-				<br />
-				<br />
-			</div>
-			
-		</div>
-	
-	<!-- END OF FOOTER -->
-	
-	
+
+
+
+</section>
+
+
+
 </div>
-
-
-
-
-
-
 
 
 </body>
