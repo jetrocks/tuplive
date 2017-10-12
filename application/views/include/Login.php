@@ -9,36 +9,7 @@
 
 	<script src="<?php echo base_url('bootstrap/js/jquery.min.js'); ?>"></script>
 	<script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?> "></script>
-	<script>
-		(function(){
 	
-				var canvas = document.getElementById('canvas'),		
-					video = document.getElementById('video'),
-					vendorUrl = window.URL || window.webkitURL;
-					
-					navigator.getMedia = navigator.getUserMedia ||
-										 navigator.webkitGetUserMedia ||
-										 navigator.mozGetUserMedia ||
-										 navigator.msGetUserMedia;
-										 
-					navigator.getMedia({
-						video: true,
-						audio: false	
-						
-					}, function(stream) {
-						video.src= vendorUrl.createObjectURL(stream);
-						video.play();
-					}, function(error) {
-						//Error Occured bes
-						//error.code
-					});
-					
-					
-					
-				
-			})();
-
-	</script>
 	
 	<style>
 	
@@ -142,68 +113,10 @@
 		box-shadow: 10px 10px 5px grey;
 	}
 	
-	.bod{
-		
+	.loger{
 		background-color: #202020;
-		font-family: Tahoma, Geneva, sans-serif;
-		color: white;
-	}
-	
-	
-	
-	.bod .side{
-		background-color: #101010;
 		
 	}
-	
-	.middle {
-			transition: .5s ease;
-			opacity: 0;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%)
-			}
-	.text {
-			background-color: #c51e3a;
-			color: #dedede;
-			font-size: 16px;
-			padding: 16px 32px;
-			box-shadow: 0 8px 16px 0 rgba(242,242,242,0.5);
-			}
-			
-	.text a{
-		color: #dedede;
-		font-size: 20px;
-		font-style: italic;
-		transition: font-size 1s, margin-left 1s;
-	}
-	.text a:hover{
-		color: #dedede;
-		font-size: 40px;
-		margin-left: -25px;
-		
-	}
-			
-	.container2:hover .video {
-							opacity: 0.3;
-							}
-	.video {
-			opacity: 1;
-			display: block;
-			transition: .5s ease;
-			backface-visibility: hidden;
-			width:1080px; 
-			height:600px;
-			}
-	.container2:hover .middle {
-			opacity: 1;
-			}
-			
-	.container2 {
-			position: relative;
-			}
 	
 	.foot{
 		
@@ -215,9 +128,30 @@
 		color: white;
 		
 	}
+	body{
+		background-color: #202020;
+		
+	}
+
+	#ep{
+		margin-left: 190px;
+		color: #ffffff;
+		}
+
 	
+	h2{
+		color: #ffffff;
+		text-align: center;
+	}
 	
+	#log{
+		padding: 25px;
+	}
 	
+	#buttons {
+		margin-left: 17%;
+	}
+
 	</style>
 </head>
 <body>
@@ -300,17 +234,9 @@
 	<div class="row navigation" id="da-thumbs" style="z-index:1;" >
 		
 		<div class="col-md-2" style="margin-left: -30px;">
-			<a href="<?php echo base_url(logged); ?>">
+			<a href="<?php echo base_url(); ?>">
 				
 					HOME
-				
-			</a>
-		</div>
-		
-		<div class="col-md-2"  >
-		<a href="#">
-				
-					PROFILE
 				
 			</a>
 		</div>
@@ -340,9 +266,17 @@
 		</div>
 		
 		<div class="col-md-2"  >
-		<a href="<?php echo base_url(); ?>">
+		<a href="<?php echo base_url('login'); ?>">
 				
-					LOG OUT
+					LOGIN
+				
+			</a>
+		</div>
+		
+		<div class="col-md-2"  >
+		<a href="#">
+				
+					JOIN US
 				
 			</a>
 		</div>
@@ -350,181 +284,80 @@
 	
 	<!-- END OF NAVIGATION -->
 	
+	
 	<!-- BODY -->
 	
-	<div class="row bod">
-			<div class="col-md-12 side" style="widhth: 1000px;">
-			<br/>
-			<br/>
-			
-			
-			
-			</div>
-		</div>
-	
-	<div class="row bod ">
-	
-	
-		<div class="col-md-1 side">
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
+	<div class="container-fluid loger">
+		<div class="col-md-2">
+		<br/>
 		</div>
 		
-		<div class="col-md-10" style="box-shadow: 0 15px 25px 5px rgba(242,242,242,0.5);" >
-			
-			<div class="row">
-			
-			<div class="col-md-12 container2">
-				<h4>NOW STREAMING: </h4>
-				<h1>COS TALENT SEARCH 2017	 </h1>
-				<h4 style="margin-left:900px; margin-top:-20px;	">September 4, 2017 </h4>
-				<video class="video" id="video" autoplay  muted loop >
-					<!-- <source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
-					 Your browser does not support HTML5 video. -->
-				</video>
-				<div class="middle">
-				<div class="text">Wanna be part of the nation?<br /><br /> &emsp;&emsp;&emsp; <a href="#"> JOIN NA! </a></div>
+		<div class="col-md-8">
+	  <h2>Log In</h2>
+	  <form class="form-horizontal" action="/action_page.php">
+		<!--<div class="form-group">
+		  <label class="control-label col-sm-2" for="email">Email:</label>
+		  <div class="col-sm-4">
+		</div>
+			<input type="email" class="form-control"  id="email" placeholder="Enter email"   name="email">
+		  </div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="pwd">Password:</label>
+		  <div class="col-sm-4">          
+			<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+		  </div>
+		</div>
+		<div class="form-group">        
+		  <div class="col-sm-offset-2 col-sm-10">
+			<div class="checkbox">
+			  <label><input type="checkbox" name="remember"> Remember me</label>
+			</div>
+		  </div>
+		</div>
+		<div class="form-group">        
+		  <div class="col-sm-offset-2 col-sm-10">
+			<button type="submit" class="btn btn-default">Submit</button>
+		  </div>
+		</div> -->
+		<div class="col-md-12" id="log">
+			<div class="col-md-6" id="ep">
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="text" class="form-control" id="email">
+				</div>
+				
+				<div class="form-group">
+				  <label for="pwd">Password:</label>
+				  <input type="password" class="form-control" id="pwd">
+				</div>
+				<div id="buttons">
+					<button type="button" class="btn btn-link">Forgot Password?</button>|<button type="button" class="btn btn-link">Register</button>
+					<button type="button" class="btn btn-default">Submit</button>
 				</div>
 			</div>
-			
-			
-			</div>
-			
-			<div class="row">
-			<div class="col-md-12" style="background-color:#4d2027">
-				<h4 style="margin-left:800px;"><i>UP NEXT: USG ANNOUNCEMENT</i></h4>
-				<h5>
-					Uploader's Message:
-				</h5>
-				<br />
-				<br />
-				<br />
-				<br />
-			</div>
-			</div>
-			
 		</div>
-		
-		<div class="col-md-1 side">
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-		</div>
-	
-
-	
-	</div>
-	
-	<div class="row bod">
-		
-		<div class="col-md-1 side">
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		</div>
-		
-		<div class="col-md-10 side">
-		<br/>
-		<hr>
-		<br/>
-		</div>
-		
-		<div class="col-md-1 side">
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+ 
+	  </form>
+	  </div>
+	  
+	  <div class="col-md-2">
+	  <br/>
 		</div>
 	</div>
+	
+	
+	
 	
 	<!-- END OF BODY -->
+	
+	
+	
 	
 	<!-- FOOTER -->
 	<div class="row foot">
 		<div class="col-md-1">
 		</div>
+		
 		
 		<div class="col-md-2">
 			<h3 style="font-size:20px;">GENERAL</h3><br />
