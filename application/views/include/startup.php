@@ -54,6 +54,28 @@
 	@media screen and (max-height: 100px) {
 	.overlay2 {overflow-y: auto;}
 	}
+	   .dexy h1 {
+		font-family: Georgia;
+		color: #c51d39;
+	}
+	.boxkular{
+		background-color: #ffffe6;
+		border-radius: 15px;
+	
+	}
+	.boxkular h3{
+		
+		color: #1a1a1a;
+	}
+	.boxkular form{
+		color: #1a1a1a;
+		font-size: 25px;
+	}
+	.boxkular form label input[type=email],input[type=password]{
+		color: #1a1a1a;
+		border-radius: 15px;
+		padding: 15px;
+	}
    </style>
 </head>
    <body class="size-960">
