@@ -117,6 +117,7 @@
 	<br />
 	<br />
 	<br />
+	    <!--start of reg and log-->
 	<div class="line">
 		<div id="log" class="box m-4 s-12 boxkular">
 			<h3>Sign In <button id="ctoreg">Reg</button></h3>
@@ -152,7 +153,7 @@
 		
 	</div>
                            
-
+<!--end of reg and log-->
 	
 	
       <script type="text/javascript" src="<?php echo base_url('bootstrap/js/responsee.js');?>"></script>               
@@ -160,10 +161,20 @@
 	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script  src="<?php echo base_url('bootstrap/js/index.js');?>"></script>
+	
 	<script>
 		$(document).ready(function(){
-			$("#panel1").delay(2000).animate({top: '50%', height: '0%' });
-			$("#panel2").delay(2000).animate({height: '0%' });
+			$("#panel1").delay(1000).animate({top: '50%', height: '0%' });
+			$("#panel2").delay(1000).animate({height: '0%' });
+			$("#reg").hide();
+			$("#ctoreg").click(function(){
+				$("#log").slideUp("medium");
+				$("#reg").delay(500).slideDown("medium");
+				});
+			$("#ctolog").click(function(){
+				$("#reg").slideUp("medium");
+				$("#log").delay(500).slideDown("medium");
+				});
 		});
 
 	</script>
