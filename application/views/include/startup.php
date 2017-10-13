@@ -75,7 +75,13 @@
 	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <script  src="<?php echo base_url('bootstrap/js/index.js');?>"></script>
-	
+	<script>
+		$(document).ready(function(){
+			$("#panel1").delay(2000).animate({top: '50%', height: '0%' });
+			$("#panel2").delay(2000).animate({height: '0%' });
+		});
+
+	</script>
 	
    </body>
 </html>
