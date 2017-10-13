@@ -113,7 +113,44 @@
 	</header></div>
                    
 	<!--end of itaas-->
-	    
+	    <br />
+	<br />
+	<br />
+	<br />
+	<div class="line">
+		<div id="log" class="box m-4 s-12 boxkular">
+			<h3>Sign In <button id="ctoreg">Reg</button></h3>
+			
+			<form>
+				<label for="webmail">TUP mail:
+				<input type="email" name="webmail">
+				</label>
+				<br />
+				<br />
+				<label for="pass">Password:
+				<input type="password" name="pass">
+				</label>
+				
+			</form>
+		</div>
+		
+		<div id="reg" class="box m-4 s-12 boxkular">
+			<h3>Register <button id="ctolog">Login</button></h3>
+			
+			<form>
+				<label for="webmail">TUP mail:
+				<input type="email" name="webmail">
+				</label>
+				<br>
+				<br>
+				<label for="pass">Password:
+				<input type="password" name="pass">
+				</label>
+				
+			</form>
+		</div>
+		
+	</div>
                            
 
 	
