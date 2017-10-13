@@ -21,6 +21,39 @@
     font-family: 'Lato', sans-serif;
 	background-image: url("TLimages/bg.jpg");
 	}
+	   
+.overlay {
+		height: 50%;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		overflow-y: hidden;
+		
+	}
+	.overlay-content {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		text-align: center;	
+	}	
+	@media screen and (max-height: 100px) {
+	.overlay {overflow-y: auto;}
+	}
+	
+	.overlay2 {
+		height: 50%;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 50%;
+		left: 0;
+		overflow-y: hidden;
+	}
+	@media screen and (max-height: 100px) {
+	.overlay2 {overflow-y: auto;}
+	}
 	
 	
    </style>
