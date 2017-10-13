@@ -49,7 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'tuplive';
-
+$route['default_controller'] = 'TupLive';
+$route['course/create_course'] = 'course/create_course';
+$route['login'] = 'TupLive/login';
+$route['logged'] = 'TupLive/logged';
+$route['about'] = 'TupLive/about';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
