@@ -150,7 +150,8 @@
 	}
 
 </style>
-<body class="font">
+
+<body>
 	<div class="container">
 	<br />
 	<!-- header -->	
@@ -179,26 +180,8 @@
 							<li class="s-12 m-2"><a >Home</a></li>
 							<li class="s-12 m-2" ><a href="..include/watchlist.php">Watchlist</a></li>
 							<li class="s-12 m-2" ><a>Community</a></li> 
-
-							<li class="s-12 m-2" ><a href= "<?php echo base_url('about'); ?>">About Us</a></li>
 							<li class="s-12 m-2" ><a>About Us</a></li>
-
-							<li class="s-12 m-2" ><a href="#"  id="loginform" >Login</a>
-								<div class="login" >
-									<div class="arrow-up"></div>
-										<div class="formholder">
-											<div class="randompad">
-												<fieldset style="font-family: "Montserrat"">
-													<label name="email" style="color: black">Email</label>
-													<input type="email" value="example@example.com" />
-													<label name="password" style="color: black">Password</label>
-													<input type="password" />
-													<input type="submit" value="Login" />
-												</fieldset>
-											</div>
-										</div>
-								</div>
-							</li>
+							<li class="s-12 m-2" ><a href="#"  id="loginform" >Login</a></li>
 							<li class="s-12 m-2"><a>Join Us</a></li>
 						</div>
 					</ul>
@@ -207,44 +190,76 @@
 		</div>
 	<!-- end of navigation -->
 	</header>
+	<section class="intro">
+  <div class="container">
+    <h1>WATCHLIST&darr;</h1>
+  </div>
+</section>
 
-	<section>
-		<div class="box container2 headcolorroundy">
-			<h2>Now Streaming</h2>
-			<video class="video s-12 m-12 1-4" autoplay  muted loop >
-				<source src="<?php echo base_url('TLimages/flow.mp4'); ?>" type="video/mp4" >
-							Your browser does not support HTML5 video.
-			</video>
-			<div class="middle">
-					<div align="center" class="text">Wanna be part of the nation?<br /><br /> <a href="#"> JOIN NA! </a></div>
-			</div>
-		</div>
-		<br />
-		<br />
-		<div class="line">
-			<div class="margin">
-				<div class="s-12 m-6 l-4 margin-bottom">
-					<div class="box headcolorroundy">
-						<h2>About</h2>
-						 <p class="para">This website is created by a group in BSIT-3A of TUP Manila Campus.<br /><br /><br /><a href="">Read More...</a></p>
-					</div>
-				</div>
-				<div class="s-12 m-6 l-4 margin-bottom">
-					<div class="box headcolorroundy">
-						<h2>Contact Us</h2>
-						<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <br /><br /><br /><a href="">Read More...</a></p>
-					</div>
-				</div>
-				<div class="s-12 m-12 l-4 margin-bottom">
-					<div class="box headcolorroundy">
-						<h2>Services</h2>
-						<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
+<section class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+      </div>
+    </li>
+  </ul>
+</section>
 	<footer >
 		<div class="box" style="width:100%">
 			<div class="line"><br />
@@ -270,9 +285,9 @@
 					CONTACT US:<br /><br />
 						<div class="icons">
 							<ul>
-								<li><a href="www.fb.com"><img src="<?php echo base_url('TLimages/fb.png'); ?>" /></a></li> &nbsp;
-								<li><a href="https://github.com/jetrocks/tuplive"><img src="<?php echo base_url('TLimages/git.png'); ?>" /></a></li>&nbsp;&nbsp;
-								<li><a href="www.twitter.com"><img src="<?php echo base_url('TLimages/twitter.png'); ?>" /></a></li>
+								<li><a href="www.fb.com"><img src="TLimages/fb.png" /></a></li> &nbsp;
+								<li><a href="https://github.com/jetrocks/tuplive"><img src="TLimages/git.png" /></a></li>&nbsp;&nbsp;
+								<li><a href="www.twitter.com"><img src="TLimages/twitter.png" /></a></li>
 								
 							</ul>
 						</div>
