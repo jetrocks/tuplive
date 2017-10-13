@@ -14,7 +14,7 @@
       <script type="text/javascript" src="<?php echo base_url('bootstrap/js/jquery-ui.min.js');?>"></script>    
 	  
 
-   </head>
+   
    <style>
 		body {
     margin: 0;
@@ -55,6 +55,7 @@
 	.overlay2 {overflow-y: auto;}
 	}
    </style>
+</head>
    <body class="size-960">
    
 		<div id="panel1" class="overlay">
