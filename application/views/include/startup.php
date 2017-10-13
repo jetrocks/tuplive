@@ -78,8 +78,8 @@
 	}
    </style>
 </head>
-   <body class="size-960">
-   
+    <body class="size-1280">
+   	<!-- start of overlays-->
 		<div id="panel1" class="overlay">
 			<div class="overlay-content">
 				<img style="width: 100%; height: 100%;" src="<?php echo base_url('bootstrap/images/upperpart.jpg');?>" alt=""/>
@@ -90,13 +90,10 @@
 			<div class="overlay-content">
 				<img style="width: 100%; height: 100%;" src="<?php echo base_url('bootstrap/images/lowerpart.jpg');?>" alt=""/>
 			</div>
-		</div>
-		
-	<div class="container-fluid">
-		<div>
-			
-		</div>
-	</div>
+	    </div>
+	    <!-- end of overlays-->
+	    
+	    
                            
 
 	
