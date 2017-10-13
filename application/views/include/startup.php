@@ -93,6 +93,26 @@
 	    </div>
 	    <!-- end of overlays-->
 	    
+	    <!--start of itaas-->
+	<div class="container-fluid">
+	<header>
+	<br>
+	<div class="line">
+	<div class="m-1 s-1">
+		<img style="width: 100%; height: 100%; margin-right: 20%;" src="<?php echo base_url('bootstrap/images/tupweb.png');?>" alt="">
+		
+	</div>
+	<div class="m-11 s-11 dexy">
+		<br>
+		<h1>
+		TUP Live!
+		</h1>
+		
+	</div>
+	</div>
+	</header></div>
+                   
+	<!--end of itaas-->
 	    
                            
 
