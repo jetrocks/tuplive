@@ -42,6 +42,7 @@
 
 </head>
 <style>
+	
 	.botroundy{
 		border-radius: 0 0 25px 25px;
 	}
@@ -132,25 +133,24 @@
 		width: 100%;
 	}
 	.footersize{
-		font-size: 10px;
+		font-size: 11px;
 		color: black;
 	}
 	input {
-
-		width: 300px;
+		width: 200px;
 	}
 	textarea {
 		height: 100px;
-		width: 300px;
-		width: 260px;
+		width: 200px;
 	}
-	textarea {
-		height: 100px;
-		width: 260px;
+	.icons ul li{
+		height: 40px;
+		width: 40px;
+		display:inline-block;
 	}
 
 </style>
-<body >
+<body class="font">
 	<div class="container">
 	<br />
 	<!-- header -->	
@@ -158,10 +158,11 @@
 		<div class="line top">
 			<div class="box headcolor">
 				<div class="s-6 l-1" align="center" style="top: 50px;">
-					<img class="logo" src="<?php echo base_url('..TupLive/TLimages/tupweb.png'); ?>">
+					<img class="logo" src="<?php echo base_url('TLimages/tupweb.png'); ?>">
 				</div>
-				<div class="s-6 l-4">
-					<img class="logo2" src="<?php echo base_url('..TupLive/TLimages/livetitle.png'); ?>">
+				
+				<div class="s-6 l-4" >
+					<img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>">
 					<h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website<h4>
 				</div>
 			</div>
@@ -176,7 +177,7 @@
 					<ul >
 						<div class="dexy" align="center">
 							<li class="s-12 m-2"><a >Home</a></li>
-							<li class="s-12 m-2" ><a>Watchlist</a></li>
+							<li class="s-12 m-2" ><a href="..include/watchlist.php">Watchlist</a></li>
 							<li class="s-12 m-2" ><a>Community</a></li> 
 							<li class="s-12 m-2" ><a>About Us</a></li>
 							<li class="s-12 m-2" ><a href="#"  id="loginform" >Login</a>
@@ -243,7 +244,7 @@
 	
 	<footer >
 		<div class="box" style="width:100%">
-			<div class="line">
+			<div class="line"><br />
 				<div class="s-12 m-2 ">
 					GENERAL<br /><br />
 					<div class="footersize">
@@ -262,14 +263,22 @@
 						<a href="#">Site Help</a><br /><br />
 					</div>
 				</div>
-				<div class="s-12 m-3 ">
+				<div class="s-12 m-3">
 					CONTACT US:<br /><br />
+						<div class="icons">
+							<ul>
+								<li><a href="www.fb.com"><img src="TLimages/fb.png" /></a></li> &nbsp;
+								<li><a href="https://github.com/jetrocks/tuplive"><img src="TLimages/git.png" /></a></li>&nbsp;&nbsp;
+								<li><a href="www.twitter.com"><img src="TLimages/twitter.png" /></a></li>
+								
+							</ul>
+						</div>
 				</div>
-				<div class="s-12 m-5 ">
+				<div class="s-12 m-5">
 					SEND US YOUR THOUGHTS: <br /><br />
 					<div class="footersize">
 						<form action="#" method="post">
-							<input type="text" name="email" maxlength="100" placeholder="Email" /><br /><br />
+							<input type="text" name="email" maxlength="30" placeholder="Email" /><br /><br />
 							<textarea name="message" placeholder="Message"></textarea><br />
 							<div>&nbsp;</div><button>Send</button>
 						</form>
