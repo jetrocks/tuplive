@@ -42,6 +42,7 @@
 
 </head>
 <style>
+	
 	.botroundy{
 		border-radius: 0 0 25px 25px;
 	}
@@ -132,29 +133,35 @@
 		width: 100%;
 	}
 	.footersize{
-		font-size: 10px;
+		font-size: 11px;
 		color: black;
 	}
 	input {
-		width: 200px;
+		width: 250px;
 	}
 	textarea {
 		height: 100px;
-		width: 200px;
+		width: 250px;
+	}
+	.icons ul li{
+		height: 40px;
+		width: 40px;
+		display:inline-block;
 	}
 
 </style>
-<body >
+<body class="font">
 	<div class="container">
 	<br />
 	<!-- header -->	
 	<header>
 		<div class="line top">
 			<div class="box headcolor">
-				<div class="s-6 l-2" align="center" style="top: 50px;">
+				<div class="s-6 l-1" align="center" style="top: 50px;">
 					<img class="logo" src="<?php echo base_url('TLimages/tupweb.png'); ?>">
 				</div>
-				<div class="s-6 l-4">
+				
+				<div class="s-6 l-4" >
 					<img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>">
 					<h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website<h4>
 				</div>
@@ -170,7 +177,7 @@
 					<ul >
 						<div class="dexy" align="center">
 							<li class="s-12 m-2"><a >Home</a></li>
-							<li class="s-12 m-2" ><a>Watchlist</a></li>
+							<li class="s-12 m-2" ><a href="..include/watchlist.php">Watchlist</a></li>
 							<li class="s-12 m-2" ><a>Community</a></li> 
 							<li class="s-12 m-2" ><a href= "<?php echo base_url('about'); ?>">About Us</a></li>
 							<li class="s-12 m-2" ><a href="#"  id="loginform" >Login</a>
@@ -237,7 +244,7 @@
 	
 	<footer >
 		<div class="box" style="width:100%">
-			<div class="line">
+			<div class="line"><br />
 				<div class="s-12 m-2 ">
 					GENERAL<br /><br />
 					<div class="footersize">
@@ -258,6 +265,14 @@
 				</div>
 				<div class="s-12 m-3">
 					CONTACT US:<br /><br />
+						<div class="icons">
+							<ul>
+								<li><a href="www.fb.com"><img src="<?php echo base_url('TLimages/fb.png'); ?>" /></a></li> &nbsp;
+								<li><a href="https://github.com/jetrocks/tuplive"><img src="<?php echo base_url('TLimages/git.png'); ?>" /></a></li>&nbsp;&nbsp;
+								<li><a href="www.twitter.com"><img src="<?php echo base_url('TLimages/twitter.png'); ?>" /></a></li>
+								
+							</ul>
+						</div>
 				</div>
 				<div class="s-12 m-5">
 					SEND US YOUR THOUGHTS: <br /><br />
