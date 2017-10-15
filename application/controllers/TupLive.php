@@ -12,7 +12,9 @@ class Tuplive extends CI_Controller {
 	{	
 		// echo "Bootstrap Controller";
 
-		$this->load->view('include/Tliveface.html');
+
+		$this->load->view('include/Tliveface.php');
+
 	}
 	
 	public function login()
@@ -24,11 +26,3 @@ class Tuplive extends CI_Controller {
 	{
 		$this->load->view('include/Tliveface_logged');		
 	}
-	
-	public function about()
-	{
-		$this->load->view('include/about.html');		
-	}
-	
-	
-}

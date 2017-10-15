@@ -10,6 +10,7 @@
 	<link href="<?php echo base_url('bootstrap/css/icons.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/style.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/response.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo base_url('bootstrap/css/watchlist.css'); ?>" rel="stylesheet" />
 	<link rel="shortcut icon" href="<?php echo base_url('bootstrap/css/logo_1.ico'); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="../TupLive/TLimages/tup.ico">
@@ -19,6 +20,7 @@
 	<script src="<?php echo base_url('bootstrap/js/jquery-ui.min.js');?> "></script>
 	<script src="<?php echo base_url('bootstrap/js/responsee.js');?> "></script>
 	<script src="<?php echo base_url('bootstrap/js/index.js');?> "></script>
+	<script src="<?php echo base_url('bootstrap/js/watchlist.js');?> "></script>
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script type="text/javascript">
          jQuery(document).ready(function($) {	  
@@ -38,6 +40,7 @@
            });
          });	 
       </script>
+	<script>
 	
 
 </head>
@@ -304,7 +307,7 @@
 				</div>
 			
 			</div>
-		</div>
+		</div>/
 
 		</footer>
 	
