@@ -212,6 +212,7 @@
 		font-size: 30px;
 		color: black;
 		margin-left: 37%;
+		
 	}
 	
 	.our2 {
@@ -254,9 +255,8 @@
 		font-weight: lighter;
 		font-size: 15px;
 		color: black;
-
 		margin-left: 45%;
-		margin-left: 43%;
+
 	}
 
 	.desc3 {
@@ -311,6 +311,13 @@
 		margin-left: 35%;
 	}
 	
+
+	#reliablepic {
+		width: 100px;
+		height: 100px;
+		margin-left: 35%;
+	}
+
 	#butt1 {
 		background-color: #800000;
 		margin-left: 35%;
@@ -355,14 +362,54 @@
 	}
 
 
+
 	#butt1 {
 		background-color: #800000;
 		margin-left: 35%;
+		margin-bottom: 60px;
+		margin-top: 25px;
 	}
 
 	#butt2 {
 		background-color: #800000;
 		margin-left: 35%;
+		margin-bottom: 60px;
+
+	}
+	
+	#butt3 {
+		background-color: #800000;
+		margin-left: 35%;
+		margin-bottom: 60px;
+		margin-top: 46px;
+	}	
+	
+	hr { 
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-left: auto;
+		margin-right: auto;
+		border-width: 3px;
+		width: 100px;
+		border-color: #800000;
+	}
+	
+	.soc:hover {
+		background-color: #00ffffff;
+		box-shadow: 10px 0 10px 2px gray;
+		border-radius:50%;
+	}
+	
+	.flex:hover {
+		background-color: #00ffffff;
+		box-shadow:  0 0 5px 5px gray;
+		border-radius:50%;
+	}
+	
+	.reli:hover {
+		background-color: #00ffffff;
+		box-shadow: -10px 0 10px 2px gray;
+		border-radius:50%;
 	}
 }
 
@@ -392,7 +439,7 @@
 				<div class="top-nav">
 					<ul >
 						<div class="dexy" align="center">
-							<li class="s-12 m-2"><a href="<?php echo base_url('about'); ?>">Home</a></li>
+							<li class="s-12 m-2"><a href="<?php echo base_url('TupLive'); ?>">Home</a></li>
 							<li class="s-12 m-2" ><a>Watchlist</a></li>
 							<li class="s-12 m-2" ><a>Community</a></li> 
 							<li class="s-12 m-2" ><a href="<?php echo base_url('about'); ?>">About Us</a></li>
@@ -476,7 +523,7 @@
 			<h2>
 				<span class="our">Our</span> <span class="title">Campuses</span><br>
 				<span class="desc1">located in the entire Philippines</span>
-			</h2>
+			</h2> <hr />
 			</div>
 			
 			<br />
@@ -484,15 +531,20 @@
 		<!--Identity Section-->
 			<div class="box container2 headcolorroundygray">
 			<h2>
-				<span class="our2">Our</span> <span class="title">Identity</span><br>
+				<br />
+				<span class="our2">Our</span> <span class="title">Identity</span><br />
 				<span class="desc2">a unique stroke</span>
-			</h2>
+			</h2> <hr />
 
-			<br />
+
+			<!--Sociable-->	
+			<div class="col-md-4 soc">	
 			
-			<!--Sociable-->
-			<div class="col-md-4">	
-								<img src="<?php echo base_url('TLimages/sociableicon.jpg'); ?>" alt="Sociable" id="socialpic"/>
+			<br />
+			<br />
+			<br />
+			<br />
+								<img src="<?php echo base_url('TLimages/people.png'); ?>" alt="Sociable" id="socialpic"/> <br />
 								<h3 class="title2">Sociable</h3>
 								<p class="identdesc">We make every campuses updated through our announcements, and entertained <br /> 
 													 by our top videos.</p><br />
@@ -506,9 +558,15 @@
 
 
 			<!--Flexibility-->
-			<div class="col-md-4">
-								<img src="<?php echo base_url('TLimages/flexibleicon.png'); ?>" alt="Flexibility" id="flexiblepic"/>
-								<h3 class="title2">Flexibility</h3>
+			
+			<div class="col-md-4 flex">
+			
+			<br />
+			<br />
+			<br />
+			<br />
+								<img src="<?php echo base_url('TLimages/gadgets.png'); ?>" alt="Flexibility" id="flexiblepic"/> <br />
+								<h3 class="title2b">Flexibility</h3>
 								<p class="identdesc">We provide services in most of today's <br />
 													 technology and gives privilege to <br /> 
 												     every TUPian students to watch <br />
@@ -517,31 +575,72 @@
 			</div>
 
 			<!--Reliability-->
-			<div class="col-md-4">
-								<img src="TLimages/shakehands.png" alt="Reliability" id="reliablepic"/> <br />
+
+			
+			<div class="col-md-4 reli">
+			
+			<br />
+			<br />
+			<br />
+			<br />
+								<img src="<?php echo base_url('TLimages/shakehands.png'); ?>" alt="Reliability" id="reliablepic"/> <br />
 								<h3 class="title2">Reliability</h3>
 								<p class="identdesc">Our videos are based on open source, reliable &amp; robust technologies</p><br>
 								<button type="button" class="btn" id="butt3">Join Us</button>	
-			</div>
 
-								<img src="" alt=""/>
-								<h3>Reliability</h3>
-								<p class="text">Depuis plus de 10 ans, nous créons des sites internet / extranet &amp; e-commerce</p><br>
-								<button class="btn btn-pink">Nos actualités</button>
-							</a>
 			</div>
 			</div>
-
 
 			<br />
 
 
 		<!--Team Section-->
+		
 			<div class="box container2 headcolorroundywhite">
 			<h2>
 				<span class="our3">Our</span> <span class="title">Team</span><br>
 				<span class="desc3">various profiles in a welded group</span>
-			</h2>			
+			</h2> <hr />
+
+	 		<!--Division of Picture-->
+				
+				<div class="row">
+				
+					<!--Glen Pic-->
+					
+						<div class="col-md-6">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+					<!--Dexxy Pic-->
+					
+						<div class="col-md-6">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+				</div>
+				
+				<div class="row">
+				
+					<!--Tierce Pic-->
+					
+						<div class="col-md-4">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+					<!--Aeinreb Pic-->
+					
+						<div class="col-md-4">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+					<!--Angel Pic-->
+					
+						<div class="col-md-4">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+				</div>	
 			</div>
 
 		<br />
@@ -615,5 +714,4 @@
 	
 	</div>
 </body>
-
 </html>
