@@ -81,7 +81,6 @@
 		background-color: #C0C0C0;
 		box-shadow: 0px 10px 5px #1a1a1a;
 		border-radius: 15px 15px 15px 15px;
-		
 	}
 
 	.topp{
@@ -164,6 +163,7 @@
 		font-size: 30px;
 		color: black;
 		margin-left: 37%;
+		
 	}
 	
 	.our2 {
@@ -266,6 +266,7 @@
 		background-color: #800000;
 		margin-left: 35%;
 		margin-bottom: 60px;
+
 	}
 	
 	#butt3 {
@@ -273,7 +274,7 @@
 		margin-left: 35%;
 		margin-bottom: 60px;
 		margin-top: 46px;
-	}
+	}	
 	
 	hr { 
 		margin-top: 0.5em;
@@ -283,6 +284,23 @@
 		border-width: 3px;
 		width: 100px;
 		border-color: #800000;
+	}
+	
+	.soc:hover {
+		background-color: #00ffffff;
+		box-shadow: 10px 0 10px 2px gray;
+	}
+	
+	.flex:hover {
+		background-color: #00ffffff;
+		box-shadow:  0 0 5px 5px gray;
+		cursor: grab;
+	}
+	
+	.reli:hover {
+		background-color: #00ffffff;
+		box-shadow: -10px 0 10px 2px gray;
+		cursor: grab;
 	}
 }
 
@@ -357,18 +375,18 @@
 			<div class="box container2 headcolorroundygray">
 			<h2>
 				<br />
-				<br />
-				<span class="our2">Our</span> <span class="title">Identity</span><br>
+				<span class="our2">Our</span> <span class="title">Identity</span><br />
 				<span class="desc2">a unique stroke</span>
 			</h2> <hr />
 
-			<br />
-			<br />
-			<br />
-			<br />
+
+			<!--Sociable-->	
+			<div class="col-md-4 soc">	
 			
-			<!--Sociable-->
-			<div class="col-md-4">	
+			<br />
+			<br />
+			<br />
+			<br />
 								<img src="<?php echo base_url('TLimages/people.png'); ?>" alt="Sociable" id="socialpic"/> <br />
 								<h3 class="title2">Sociable</h3>
 								<p class="identdesc">We make every campuses updated through our announcements, and entertained <br /> 
@@ -377,9 +395,15 @@
 			</div>
 
 			<!--Flexibility-->
-			<div class="col-md-4">
+			
+			<div class="col-md-4 flex">
+			
+			<br />
+			<br />
+			<br />
+			<br />
 								<img src="<?php echo base_url('TLimages/gadgets.png'); ?>" alt="Flexibility" id="flexiblepic"/> <br />
-								<h3 class="title2">Flexibility</h3>
+								<h3 class="title2b">Flexibility</h3>
 								<p class="identdesc">We provide services in most of today's <br />
 													 technology and gives privilege to <br /> 
 												     every TUPian students to watch <br />
@@ -388,14 +412,19 @@
 			</div>
 
 			<!--Reliability-->
-			<div class="col-md-4">
+			
+			<div class="col-md-4 reli">
+			
+			<br />
+			<br />
+			<br />
+			<br />
 								<img src="<?php echo base_url('TLimages/shakehands.png'); ?>" alt="Reliability" id="reliablepic"/> <br />
 								<h3 class="title2">Reliability</h3>
 								<p class="identdesc">Our videos are based on open source, reliable &amp; robust technologies</p><br>
 								<button type="button" class="btn" id="butt3">Join Us</button>	
 			</div>
 			</div>
-
 
 			<br />
 
@@ -405,45 +434,47 @@
 			<h2>
 				<span class="our3">Our</span> <span class="title">Team</span><br>
 				<span class="desc3">various profiles in a welded group</span>
-			</h2> <hr />	
-			
-				<!--Division of Picture-->
+			</h2> <hr />
+
+	 		<!--Division of Picture-->
 				
-					<div class="row">
-						
-						<!--Glen Pic-->
-					
-							<div class="col-md-6">
-							<p style="color: black;"> Hello </p>
-							</div>
-					
-						<!--Dexxy Pic-->
-
-							<div class="col-md-6">
-							<p style="color: black;"> Hello </p>
-							</div>
-					</div>
+				<div class="row">
 				
-					<div class="row">
-						
-						<!--Tierce Pic-->
+					<!--Glen Pic-->
 					
-							<div class="col-md-4">
-							<p style="color: black;"> Hello </p>
-							</div>
+						<div class="col-md-6">
+						<p style="color: black;"> Hello </p>
+						</div>
 					
-						<!--Aeinreb Pic-->
-
-							<div class="col-md-4">
-							<p style="color: black;"> Hello </p>
-							</div>
-
-						<!--Angel Pic-->
-
-							<div class="col-md-4">
-							<p style="color: black;"> Hello </p>
-							</div>
-					</div>	
+					<!--Dexxy Pic-->
+					
+						<div class="col-md-6">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+				</div>
+				
+				<div class="row">
+				
+					<!--Tierce Pic-->
+					
+						<div class="col-md-4">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+					<!--Aeinreb Pic-->
+					
+						<div class="col-md-4">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+					<!--Angel Pic-->
+					
+						<div class="col-md-4">
+						<p style="color: black;"> Hello </p>
+						</div>
+					
+				</div>	
 			</div>
 
 		<br />
