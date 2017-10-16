@@ -10,7 +10,7 @@ body {
   font-size:16px;
   font-family:"Montserrat",Arial,sans-serif;
   /* color:#444; */
-  background:  url("../img/bg.jpg") no-repeat center center fixed; 
+  background:  url("bg.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -32,7 +32,6 @@ h4 {font-size:1.4rem;}
 h5 {font-size:1.1rem;}  
 h6 {font-size:0.9rem;}    
 a, a:link, a:visited, a:hover, a:active {
-	
   text-decoration:none;
   color:#9BB800;
   transition:color 0.20s linear 0s;
@@ -217,7 +216,7 @@ ul.chevron .submenu > a:after, ul.chevron .sub-submenu > a:after,ul.chevron .asi
 .aside-nav li a,.aside-nav li a:link,.aside-nav li a:visited {
   color:#444;
   display:block;
-  font-size:5rem;
+  font-size:1rem;
   padding:1.25rem;
   border-bottom:1px solid #d2d2d2; 
 }
