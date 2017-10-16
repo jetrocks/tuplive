@@ -90,7 +90,7 @@
 	}
    </style>
 </head>
-    <body class="size-1280">
+    <body>
    	<!-- start of overlays-->
 		<div id="panel1" class="overlay">
 			<div class="overlay-content">
