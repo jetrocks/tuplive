@@ -241,8 +241,8 @@
 	
 	<script>
 		$(document).ready(function(){
-			$("#panel1").delay(1000).animate({top: '50%', height: '0%' });
-			$("#panel2").delay(1000).animate({height: '0%' });
+			$("#panel1").delay(1000).animate({top: '-50%', height: '0%' });
+			$("#panel2").delay(1000).animate({top: '100%',height: '0%' });
 			$("#reg").hide();
 			$("#ctoreg").click(function(){
 				$("#log").slideUp("medium");
