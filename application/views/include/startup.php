@@ -68,9 +68,8 @@
 		color: #c51d39;
 	}
 	.boxkular{
-		background-color: #ffffe6;
+		background-color: #c51d39;
 		border-radius: 15px;
-	
 	}
 	.boxkular h3{
 		
