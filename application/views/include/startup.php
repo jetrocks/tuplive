@@ -157,19 +157,32 @@
 		</div>
 		
 		<div id="log" class="box m-4 s-12 boxkular">
-			<h3>Sign In <button id="ctoreg">Reg</button></h3>
-			
-			<form>
-				<label for="webmail">TUP mail:
-				<input type="email" name="webmail">
-				</label>
-				<br />
-				<br />
-				<label for="pass">Password:
-				<input type="password" name="pass">
-				</label>
-				
+		
+			<br />
+			<h1 style="color: white;" align="center">Sign In </h1>
+			<h4 style="color: white;" align="center">Log in now and join the fun! </h4>
+			<br />
+			<br />
+			<form action="<?php echo base_url('logged');?>" class="formy">
+				<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" class="form-control" id="username" placeholder="Enter username..." name="username" />
+				</div>
+				<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" />
+				</div>
+				<div class="checkbox">
+				<label><input type="checkbox" name="remember"> Remember me</label>
+				</div>
+				<button id="tempo" style="margin-left: 38%;" type="submit" class="btn btn-default">Log In</button>
 			</form>
+			<br />
+			<h2 style="color: white;" align="center">Still not a member? Join the fun now!</h2>
+			<br />
+				<button style="margin-left: 38%;" id="ctoreg" class="btn btn-success">Register</button>
+				<br />
+			<br />
 		</div>
 		
 		<div id="reg" class="box m-4 s-12 boxkular">
