@@ -106,23 +106,26 @@
 		<!-- end of overlays-->
 	    
 	    <!--start of itaas-->
-	<div class="container-fluid">
-	<header>
-	<br>
-	<div class="line">
-	<div class="m-1 s-1">
-		<img style="width: 100%; height: 100%; margin-right: 20%;" src="<?php echo base_url('bootstrap/images/tupweb.png');?>" alt="">
-		
+	<div class="container-fluid" >
+	<header >
+	<!-- header -->
+	<div class="row">
+		<div class="line top" >
+			<div class="box remcolor" >
+				<div class="s-4 l-1" align="center" style="top: 50px;">
+					<img class="logo" src="<?php echo base_url('TLimages/tupweb.png'); ?>">
+				</div>
+				
+				<div class="s-8 l-4" >
+					<img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>">
+					<h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website<h4 />
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="m-11 s-11 dexy">
-		<br>
-		<h1>
-		TUP Live!
-		</h1>
-		
-	</div>
-	</div>
-	</header></div>
+		 <!-- end of header -->
+	</header>
+	
                    
 	<!--end of itaas-->
 	    <br />
