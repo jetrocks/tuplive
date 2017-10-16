@@ -78,6 +78,11 @@
 	.boxkular button, form button{
 		font-size: 20px;
 	}
+	.sidetext h1{
+		color: white;
+		font-size: 50px;
+		font-family: bookman;
+	}
    </style>
 </head>
     <body class="size-1280">
