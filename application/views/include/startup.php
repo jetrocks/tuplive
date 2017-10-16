@@ -152,6 +152,10 @@
 			</h2>
 		</div>
 		
+		<div class="m-1 s-12">
+			<br />
+		</div>
+		
 		<div id="log" class="box m-4 s-12 boxkular">
 			<h3>Sign In <button id="ctoreg">Reg</button></h3>
 			
