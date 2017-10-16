@@ -55,6 +55,10 @@
 	@media screen and (max-height: 100px) {
 	.overlay2 {overflow-y: auto;}
 	}
+	   .logo{
+		width: 100px;
+		height: 100px;
+	}
 	   .dexy h1 {
 		font-family: Georgia;
 		color: #c51d39;
