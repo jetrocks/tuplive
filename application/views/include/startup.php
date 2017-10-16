@@ -252,6 +252,15 @@
 				$("#reg").slideUp("medium");
 				$("#log").delay(500).slideDown("medium");
 				});
+			$("#tempo").click(function(e){
+				$("#panel1").animate({top: '0%', height: '50%' });
+				$("#panel2").animate({top: '50%',height: '50%' });
+				 e.preventDefault(); //will stop the link href to call the blog page
+
+				setTimeout(function () {
+				window.location.href = "<?php echo base_url('logged'); ?>"; //will redirect to your blog page (an ex: blog.html)
+					}, 1000); //will call the function after 2 secs.
+				});
 		});
 
 	</script>
