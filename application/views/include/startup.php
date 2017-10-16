@@ -140,6 +140,18 @@
 		<br />
 		</div>
 		
+		<div  class="m-5 s-12 sidetext">
+			<h1>
+					Technological University of the Philippines is live now!
+			</h1>
+			<br />
+			<h2>
+					This is TUP's one and powerful Live Streaming Website.
+					Take a peek to the small but powerful world of TUP.
+					Feel at home in your second-home by reaching out your laptop or smartphone. 
+			</h2>
+		</div>
+		
 		<div id="log" class="box m-4 s-12 boxkular">
 			<h3>Sign In <button id="ctoreg">Reg</button></h3>
 			
