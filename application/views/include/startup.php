@@ -75,7 +75,9 @@
 		color: #white;
 		font-size: 10px;
 	}
-	
+	.boxkular button, form button{
+		font-size: 20px;
+	}
    </style>
 </head>
     <body class="size-1280">
