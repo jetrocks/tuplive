@@ -19,4 +19,9 @@ class Tuplive extends CI_Controller {
 	{
 		$this->load->view('include/Tliveface.html');	
 	}
+	
+	public function about()
+	{
+		$this->load->view('include/about');	
+	}
 }
