@@ -72,7 +72,7 @@
 		border-radius: 15px;
 	}
 	.boxkular form{
-		color: #white;
+		color: white;
 		font-size: 10px;
 	}
 	.boxkular button, form button{
