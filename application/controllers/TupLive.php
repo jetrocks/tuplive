@@ -16,11 +16,6 @@ class Tuplive extends CI_Controller {
 
 	}
 	
-	public function login()
-	{
-		$this->load->view('include/login');		
-	}
-	
 	public function logged()
 	{
 		$this->load->view('include/Tliveface_logged');		
