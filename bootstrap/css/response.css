@@ -8,7 +8,7 @@
 body {
   background:none repeat scroll 0 0 #d3d3d3;
   font-size:16px;
-  font-family: 'Roboto';
+  font-family:"Montserrat",Arial,sans-serif;
   /* color:#444; */
   background:  url("../img/bg.jpg") no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -30,9 +30,7 @@ h2 {font-size:2.2rem;}
 h3 {font-size:1.8rem;}  
 h4 {font-size:1.4rem;}  
 h5 {font-size:1.1rem;}  
-h6 {font-size:0.9rem;}   
-
-
+h6 {font-size:0.9rem;}    
 a, a:link, a:visited, a:hover, a:active {
 	
   text-decoration:none;
