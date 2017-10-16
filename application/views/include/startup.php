@@ -90,7 +90,12 @@
 		font-size: 30px;
 		font-family: bookman;
 	}
-	
+	.bottom{
+		background-color: #262626;
+		}
+	.bottommer{
+		color: #d9d9d9;
+	}
    </style>
    </head>
    
@@ -234,6 +239,29 @@
 		
 	</div>
 	<!--end of reg and log-->
+		<br />
+		<br />
+		<br />
+	<div class="row bottom" >
+		
+		<br />
+		<div class="line" >
+			<div class="m-1 s-12" >
+				<br />
+			</div>
+			<div class="m-5 s-12 bottommer" >
+					&copy;2017 <a href="<?php echo base_url();?>">tuplive.com</a> by TUP-Manila COS IT3A Team Ebina. All rights reserved.
+			</div>
+			<div class="m-4 s-12 bottommer" >
+					<br />
+			</div>
+			<div class="m-2 s-12 bottommer" >
+					Developed by Team Ebina.
+			</div>
+		</div>
+		<br />
+		
+	</div>
 	</div>
       <script type="text/javascript" src="<?php echo base_url('bootstrap/js/responsee.js');?>"></script>               
       
