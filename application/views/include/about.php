@@ -10,7 +10,7 @@
 	<link href="<?php echo base_url('bootstrap/css/icons.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/style.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/response.css'); ?>" rel="stylesheet" />
-	<link rel="shortcut icon" href="<?php echo base_url('bootstrap/css/tup.ico'); ?>">
+	<link rel="shortcut icon" href="<?php echo base_url('bootstrap/css/logo_1.ico'); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="../TupLive/TLimages/tup.ico">
 	<script src="<?php echo base_url('bootstrap/js/jquery.min.js'); ?>"></script>
@@ -255,12 +255,6 @@
 		margin-left: 35%;
 	}
 
-	#reliablepic {
-		width: 100px;
-		height: 100px;
-		margin-left: 35%;
-	}
-
 	#butt1 {
 		background-color: #800000;
 		margin-left: 35%;
@@ -303,7 +297,6 @@
 		box-shadow:  0 0 5px 5px gray;
 		border-radius:50%;
 	}
-
 	
 	.reli:hover {
 		background-color: #00ffffff;
@@ -329,10 +322,161 @@
 	.vis:hover {
 		background-color: #00ffffff;
 		transform: rotateZ(-30deg);
+	}
+	
+	.glen {
+		margin-left: 150px;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.glen:hover {
+		transform: scale(1.3);
+	}
+	
+	.glendesc {
+		color: black;
+		font-family: Montserrat;
+		font-weight: light;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.dex {
+		margin-left: 25px;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.dex:hover {
+		transform: scale(1.3);
+	}
+	
+	.dexdesc {
+		color: black;
+		font-family: Montserrat;
+		font-weight: light;
+		width: 230px;
+		height: 200px;
+	}
 
+	.tierce {
+		margin-left: 20px;
+		width: 200px;
+		height: 200px;
+	}
+	
+	.tierce:hover {
+		transform: scale(1.3);
+		
+	}
+	
+	.tiercedesc {
+		color: black;
+		font-family: Montserrat;
+		font-weight: light;
+		width: 200px;
+		height: 150px;
+		margin-left: -20px;
+	}
+	
+	.aein {
+		
+		width: 200px;
+		height: 200px;
+		margin-left: -20px;
+	}
+	
+	.aein:hover {
+		transform: scale(1.3);
+	}
+	
+	.aeindesc {
+		color: black;
+		font-family: Montserrat;
+		font-weight: light;
+		width: 180px;
+		height: 180px;
+		margin-left: -22px;
+	}
+	
+	.gel {
+		width: 200px;
+		height: 200px;
+		margin-left: -13px;
+	}
+	
+	.gel:hover {
+		transform: scale(1.3);
+	}
+	
+	.geldesc {
+		color: black;
+		font-family: Montserrat;
+		font-weight: light;
+		width: 225px;
+		height: 150px;
+		margin-left: -20px;
+	}
+	
+	.titoldesc {
+		color: #800000;
+	}
+	
+	ul {
+		 list-style-type: none;
+	}
+	
+	.roledesc {
+		font-size: 15px;
+		font-weight: lighter;
+		font-family: Arial;
+	}
+	
+	.service1 {
+		width: 500px; 
+		height: 250px;
+		border-radius: 10px;
+		display: block;
+		margin-left: 40px;
+		opacity:0.5;
+	}
+	
+	.service1:hover {
+		opacity:1;
+	}
+	
+	.service2 {
+		width: 500px; 
+		height: 250px;
+		border-radius: 10px;
+		display: block;
+		margin-left: 50px;
+		opacity:0.5;
+	}
+	
+	.service2:hover {
+		opacity:1;
+	}
+	
+	.para1 {
+		font-size: 50px;
+		color: black;
+		font-family: Montserrat;
+		font-weight: Lighter;
+		margin-left: 50px;
+	}
+	
+	.para2 {
+		font-size: 50px;
+		color: black;
+		font-family: Montserrat;
+		font-weight: Lighter;
+		text-align: right;
 	}
 	
 }
+
 
 </style>
 <body >
@@ -392,11 +536,12 @@
 	<section>
 
 		<!--Campus Section-->
+		
 			<div class="box container2 headcolorroundywhite">
-			<h2>
-				<span class="our">Our</span> <span class="title">Campuses</span><br>
-				<span class="desc1">located in the entire Philippines</span>
-			</h2> <hr />
+			
+			<br />
+			
+			<img src="<?php echo base_url('TLimages/campus.png'); ?>" alt="Our Campuses" class="center">
 			
 			<!--TUP Manila Picture-->
 			
@@ -442,30 +587,16 @@
 								</a><br />
 			</div>
 			
-
-			<!--Sociable-->
-			<div class="col-md-4 soc">	
-								<img src="TLimages/people.png" alt="Sociable" id="socialpic"/> <br />
-
-
-		<!--Campus Section-->
-			<div class="box container2 headcolorroundywhite">
-			<h2>
-				<span class="our">Our</span> <span class="title">Campuses</span><br>
-				<span class="desc1">located in the entire Philippines</span>
-			</h2> <hr />
-
 			</div>
 			
 			<br />
 
 		<!--Identity Section-->
 			<div class="box container2 headcolorroundygray">
-			<h2>
-				<br />
-				<span class="our2">Our</span> <span class="title">Identity</span><br />
-				<span class="desc2">a unique stroke</span>
-			</h2> <hr />
+			
+			<br />
+			
+			<img src="<?php echo base_url('TLimages/identity.png'); ?>" alt="Our Identity" class="center">
 
 
 			<!--Sociable-->	
@@ -511,7 +642,6 @@
 								<h3 class="title2">Reliability</h3>
 								<p class="identdesc">Our videos are based on open source, reliable &amp; robust technologies</p><br>
 								<button type="button" class="btn" id="butt3">Join Us</button>	
-
 			</div>
 			</div>
 
@@ -520,50 +650,114 @@
 		<!--Team Section-->
 		
 			<div class="box container2 headcolorroundywhite">
-			<h2>
-				<span class="our3">Our</span> <span class="title">Team</span><br>
-				<span class="desc3">various profiles in a welded group</span>
-			</h2> <hr />
-
+			
+			<br />
+			
+			<img src="<?php echo base_url('TLimages/team.png'); ?>" alt="Our Team" class="center">
+			
+			<br />
+			<br />
+			<br />
+			<br />
+				
 	 		<!--Division of Picture-->
 				
 				<div class="row">
-				
+					
 					<!--Glen Pic-->
 					
-						<div class="col-md-6">
-						<p style="color: black;"> Hello </p>
+						<div class="col-md-3 glen">
+						
+							<img src="<?php echo base_url('TLimages/glen.png'); ?>" alt="Glen" id="glen"/>
+						
+						</div>	
+						
+						
+						<div class="col-md-3 glendesc">
+						
+							<h1 class="titoldesc"> Glen Jester Ebina </h1>
+							<br />
+								<ul> <li class="roledesc"> Developer (back end) </li>
+								</ul>	
 						</div>
-					
+						
 					<!--Dexxy Pic-->
 					
-						<div class="col-md-6">
-						<p style="color: black;"> Hello </p>
+						<div class="col-md-3 dex">
+						
+							<img src="<?php echo base_url('TLimages/dex.jpg'); ?>" alt="Dex" id="dex"/>
+							
+						</div>
+						
+						<div class="col-md-3 dexdesc">
+						
+							<h1 class="titoldesc"> John Xedricks Fornillos </h1>
+							<br />
+								<ul> <li class="roledesc"> Developer (front end) </li>
+								</ul>		
+											
 						</div>
 					
 				</div>
+				
+				<br />
+				<br />
+				<br />
+				<br />
 				
 				<div class="row">
 				
 					<!--Tierce Pic-->
 					
-						<div class="col-md-4">
-						<p style="color: black;"> Hello </p>
+						<div class="col-md-2 tierce">
+						
+							<img src="<?php echo base_url('TLimages/tierce.jpg'); ?>" alt="Tierce" id="tierce"/>
+							
+						</div>
+						
+						<div class="col-md-2 tiercedesc">
+						
+							<h1 class="titoldesc"> Mary Tierce Cueto </h1>
+								<ul> <li class="roledesc"> Integrator Designer </li>
+								</ul>
+							
 						</div>
 					
 					<!--Aeinreb Pic-->
 					
-						<div class="col-md-4">
-						<p style="color: black;"> Hello </p>
+						<div class="col-md-4 aein">
+						
+							<img src="<?php echo base_url('TLimages/aein.png'); ?>" alt="Aein" id="aein"/>
+							
+						</div>
+						
+						<div class="col-md-2 aeindesc">
+						
+							<h1 class="titoldesc"> Aeinreb Mangaco </h1>
+								<ul> <li class="roledesc"> Integrator Designer </li>
+								</ul>
+							
 						</div>
 					
 					<!--Angel Pic-->
 					
-						<div class="col-md-4">
-						<p style="color: black;"> Hello </p>
+						<div class="col-md-4 gel">
+						
+							<img src="<?php echo base_url('TLimages/gel.png'); ?>" alt="Gel" id="gel"/>
+							
 						</div>
+						
+						<div class="col-md-2 geldesc">
+						
+							<h1 class="titoldesc"> Mary Angeline Villoria </h1>
+								<ul> <li class="roledesc"> Integrator Designer </li>
+								</ul>
+							
+						</div>
+						
 					
 				</div>	
+				<br />
 			</div>
 
 		<br />
@@ -571,24 +765,48 @@
 
 		<div class="line">
 			<div class="margin">
-				<div class="s-12 m-6 l-4 margin-bottom">
-					<div class="box headcolorroundy">
-						<h2>About</h2>
-						 <p class="para">This website is created by a group in BSIT-3A of TUP Manila Campus.<br /><br /><br /><a href="">Read More...</a></p>
+			
+		<!--Service Section-->
+		
+				<div class="box container2 headcolorroundygray">
+						<br />	
+						<img src="<?php echo base_url('TLimages/service.png'); ?>" alt="Our service" class="center">
+
+						<br />
+						<br />
+						
+							<div class="col-md-6">
+								<div class="center-block">
+									<img src="<?php echo base_url('TLimages/livestream.png'); ?>" alt="Livestream" class="service1">
+								</div>
+							</div>
+							
+							<br />
+							<br />
+							
+							<div class="col-md-6" style="width: 500px; height:250px;">
+								<div>
+									<p class="para1">Real-time live streaming</p>
+								</div>
+							</div>
+							
+							<div class="col-md-6" style="width: 500px; height:250px;">
+								<div>
+									<p class="para2">Latest news updates</p>
+								</div>
+							</div>
+							
+							
+							
+							<div class="col-md-6">
+								<div class="center-block">
+									<img src="<?php echo base_url('TLimages/news.jpg'); ?>" alt="Livestream" class="service2">
+								</div>
+								<br />
+							</div>
+							
+
 					</div>
-				</div>
-				<div class="s-12 m-6 l-4 margin-bottom">
-					<div class="box headcolorroundy">
-						<h2>Contact Us</h2>
-						<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <br /><br /><br /><a href="">Read More...</a></p>
-					</div>
-				</div>
-				<div class="s-12 m-12 l-4 margin-bottom">
-					<div class="box headcolorroundy">
-						<h2>Services</h2>
-						<p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -635,6 +853,4 @@
 	
 	</div>
 </body>
-
 </html>
-
