@@ -213,10 +213,8 @@
 	<section>
 		<div class="box container2 headcolorroundy">
 			<h2>Now Streaming</h2>
-			<iframe src="https://www.ustream.tv/combined-embed/23425508?videos=tab&html5ui" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="900" height="600"></iframe>
-			<div class="middle">
-					<div align="center" class="text">Wanna be part of the nation?<br /><br /> <a href="#"> JOIN NA! </a></div>
-			</div>
+			
+			<iframe class="container-fluid" src="https://www.ustream.tv/combined-embed/23425508?videos=tab&html5ui" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="900" height="600"></iframe>
 		</div>
 		<br />
 		<br />
