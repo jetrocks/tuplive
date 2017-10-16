@@ -75,11 +75,7 @@
 		color: #white;
 		font-size: 10px;
 	}
-	.boxkular form label input[type=email],input[type=password]{
-		color: #1a1a1a;
-		border-radius: 15px;
-		padding: 15px;
-	}
+	
    </style>
 </head>
     <body class="size-1280">
