@@ -71,10 +71,6 @@
 		background-color: #c51d39;
 		border-radius: 15px;
 	}
-	.boxkular h3{
-		
-		color: #1a1a1a;
-	}
 	.boxkular form{
 		color: #1a1a1a;
 		font-size: 25px;
