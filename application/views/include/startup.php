@@ -83,6 +83,11 @@
 		font-size: 50px;
 		font-family: bookman;
 	}
+	.sidetext h2{
+		color: white;
+		font-size: 30px;
+		font-family: bookman;
+	}
    </style>
 </head>
     <body class="size-1280">
