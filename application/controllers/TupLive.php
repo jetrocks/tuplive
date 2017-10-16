@@ -10,7 +10,6 @@ class Tuplive extends CI_Controller {
 		
 	public function index()
 	{	
-		// echo "Bootstrap Controller";
 
 
 		$this->load->view('include/Tliveface.php');
