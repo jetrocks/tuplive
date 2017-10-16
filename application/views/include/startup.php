@@ -186,19 +186,46 @@
 		</div>
 		
 		<div id="reg" class="box m-4 s-12 boxkular">
-			<h3>Register <button id="ctolog">Login</button></h3>
-			
-			<form>
-				<label for="webmail">TUP mail:
-				<input type="email" name="webmail">
-				</label>
-				<br>
-				<br>
-				<label for="pass">Password:
-				<input type="password" name="pass">
-				</label>
-				
+			<button style="font-size: 10px;" id="ctolog" class="btn btn-default">Go Back</button>
+			<h1 style="color: white;" align="center">Register</h1>
+			<h4 style="color: white;" align="center">Become a part of the funnation! </h4>
+			<br />
+			<br />
+			<form action="<?php echo base_url();?>" class="formy">
+				<div class="form-group">
+				<label for="LastName">Last Name:</label>
+				<input type="text" class="form-control" id="lastname" placeholder="Enter Last Name..." name="lname" />
+				</div>
+				<div class="form-group">
+				<label for="FirstName">First name:</label>
+				<input type="text" class="form-control" id="firstname" placeholder="Enter First Name..." name="fname" />
+				</div>
+				<div class="form-group">
+				<label for="MidName">Middle name:</label>
+				<input type="text" class="form-control" id="midname" placeholder="Enter Middle Name..." name="mname" />
+				</div>
+				<div class="form-group">
+				<label for="username">Alias or Username:</label>
+				<input type="text" class="form-control" id="username" placeholder="Enter Username..." name="username" />
+				</div>
+				<div class="form-group">
+				<label for="tupmail">TUP Webmail:</label>
+				<input type="email" class="form-control" id="tupmail" placeholder="Enter TUP Webmail..." name="tupmail" />
+				</div>
+				<div class="form-group">
+				<label for="pass">Password:</label>
+				<input type="password" class="form-control" id="pass" placeholder="Enter Password..." name="pass" />
+				</div>
+				<div class="form-group">
+				<label for="conpass">Confirm Password:</label>
+				<input type="password" class="form-control" id="conpass" placeholder="Enter Password..." name="conpass" />
+				</div>
+				<br />
+			<br />
+				<button style="margin-left: 38%;" type="submit" class="btn btn-default btn-success">Submit</button>
 			</form>
+			<br />
+			<br />
 		</div>
 		
 	</div>
