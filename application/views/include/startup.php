@@ -59,6 +59,10 @@
 		width: 100px;
 		height: 100px;
 	}
+	   .logo2{
+		width: 200px;
+		height: 50px;
+	}
 	   .dexy h1 {
 		font-family: Georgia;
 		color: #c51d39;
