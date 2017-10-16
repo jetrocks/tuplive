@@ -72,8 +72,8 @@
 		border-radius: 15px;
 	}
 	.boxkular form{
-		color: #1a1a1a;
-		font-size: 25px;
+		color: #white;
+		font-size: 10px;
 	}
 	.boxkular form label input[type=email],input[type=password]{
 		color: #1a1a1a;
