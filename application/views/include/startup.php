@@ -91,7 +91,7 @@
    </style>
 </head>
     <body>
-   	<!-- start of overlays-->
+   		<!-- start of overlays-->
 		<div id="panel1" class="overlay">
 			<div class="overlay-content">
 				<img style="width: 100%; height: 100%;" src="<?php echo base_url('bootstrap/images/upperpart.jpg');?>" alt=""/>
@@ -102,8 +102,8 @@
 			<div class="overlay-content">
 				<img style="width: 100%; height: 100%;" src="<?php echo base_url('bootstrap/images/lowerpart.jpg');?>" alt=""/>
 			</div>
-	    </div>
-	    <!-- end of overlays-->
+		</div>
+		<!-- end of overlays-->
 	    
 	    <!--start of itaas-->
 	<div class="container-fluid">
