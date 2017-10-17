@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>TUP Live!</title>
       <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/components.css');?>">
+      <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/bootstrap.css');?>">
       <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/icons.css');?>">
 	  <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/style.css');?>">
       <link rel="stylesheet" href="<?php echo base_url('bootstrap/css/responsee.css');?>">
@@ -14,7 +15,7 @@
       <script type="text/javascript" src="<?php echo base_url('bootstrap/js/jquery-ui.min.js');?>"></script>    
 	  
 
-   
+  
    <style>
 		body {
     margin: 0;
@@ -54,32 +55,52 @@
 	@media screen and (max-height: 100px) {
 	.overlay2 {overflow-y: auto;}
 	}
-	   .dexy h1 {
+	.logo{
+		width: 100px;
+		height: 100px;
+	}
+	.logo2{
+		width: 200px;
+		height: 50px;
+	}
+	.dexy h1 {
 		font-family: Georgia;
 		color: #c51d39;
 	}
 	.boxkular{
-		background-color: #ffffe6;
+		background-color: #c51d39;
 		border-radius: 15px;
-	
-	}
-	.boxkular h3{
 		
-		color: #1a1a1a;
 	}
+
 	.boxkular form{
-		color: #1a1a1a;
-		font-size: 25px;
+		color: #white;
+		font-size: 10px;
 	}
-	.boxkular form label input[type=email],input[type=password]{
-		color: #1a1a1a;
-		border-radius: 15px;
-		padding: 15px;
+	.boxkular button, form button{
+		font-size: 20px;
+	}
+	.sidetext h1{
+		color: white;
+		font-size: 50px;
+		font-family: bookman;
+	}
+	.sidetext h2{
+		color: white;
+		font-size: 30px;
+		font-family: bookman;
+	}
+	.bottom{
+		background-color: #262626;
+		}
+	.bottommer{
+		color: #d9d9d9;
 	}
    </style>
-</head>
-    <body class="size-1280">
-   	<!-- start of overlays-->
+   </head>
+   
+   <body >
+   <!-- start of overlays-->
 		<div id="panel1" class="overlay">
 			<div class="overlay-content">
 				<img style="width: 100%; height: 100%;" src="<?php echo base_url('bootstrap/images/upperpart.jpg');?>" alt=""/>
@@ -90,72 +111,158 @@
 			<div class="overlay-content">
 				<img style="width: 100%; height: 100%;" src="<?php echo base_url('bootstrap/images/lowerpart.jpg');?>" alt=""/>
 			</div>
-	    </div>
-	    <!-- end of overlays-->
-	    
-	    <!--start of itaas-->
-	<div class="container-fluid">
-	<header>
-	<br>
-	<div class="line">
-	<div class="m-1 s-1">
-		<img style="width: 100%; height: 100%; margin-right: 20%;" src="<?php echo base_url('bootstrap/images/tupweb.png');?>" alt="">
-		
+		</div>
+		<!-- end of overlays-->
+	<!--start of itaas-->
+	<div class="container-fluid" >
+	<header >
+	<!-- header -->
+	<div class="row">
+		<div class="line top" >
+			<div class="box remcolor" >
+				<div class="s-4 l-1" align="center" style="top: 50px;">
+					<img class="logo" src="<?php echo base_url('TLimages/tupweb.png'); ?>">
+				</div>
+				
+				<div class="s-8 l-4" >
+					<img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>">
+					<h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website<h4 />
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="m-11 s-11 dexy">
-		<br>
-		<h1>
-		TUP Live!
-		</h1>
-		
-	</div>
-	</div>
-	</header></div>
+		 <!-- end of header -->
+	</header>
+	
                    
 	<!--end of itaas-->
-	    <br />
+	
 	<br />
 	<br />
-	<br />
-	    <!--start of reg and log-->
+	<!--start of reg and log-->
 	<div class="line">
+		<div class="m-1 s-12">
+		<br />
+		</div>
+		
+		<div  class="m-5 s-12 sidetext">
+			<h1>
+					Technological University of the Philippines is live now!
+			</h1>
+			<br />
+			<h2>
+					This is TUP's one and powerful Live Streaming Website.
+					Take a peek to the small but powerful world of TUP.
+					Feel at home in your second-home by reaching out your laptop or smartphone. 
+			</h2>
+		</div>
+		
+		<div class="m-1 s-12">
+			<br />
+		</div>
+		
 		<div id="log" class="box m-4 s-12 boxkular">
-			<h3>Sign In <button id="ctoreg">Reg</button></h3>
-			
-			<form>
-				<label for="webmail">TUP mail:
-				<input type="email" name="webmail">
-				</label>
-				<br />
-				<br />
-				<label for="pass">Password:
-				<input type="password" name="pass">
-				</label>
-				
+		
+			<br />
+			<h1 style="color: white;" align="center">Sign In </h1>
+			<h4 style="color: white;" align="center">Log in now and join the fun! </h4>
+			<br />
+			<br />
+			<form action="<?php echo base_url('logged');?>" class="formy">
+				<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" class="form-control" id="username" placeholder="Enter username..." name="username" />
+				</div>
+				<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" />
+				</div>
+				<div class="checkbox">
+				<label><input type="checkbox" name="remember"> Remember me</label>
+				</div>
+				<button id="tempo" style="margin-left: 38%;" type="submit" class="btn btn-default">Log In</button>
 			</form>
+			<br />
+			<h2 style="color: white;" align="center">Still not a member? Join the fun now!</h2>
+			<br />
+				<button style="margin-left: 38%;" id="ctoreg" class="btn btn-success">Register</button>
+				<br />
+			<br />
 		</div>
 		
 		<div id="reg" class="box m-4 s-12 boxkular">
-			<h3>Register <button id="ctolog">Login</button></h3>
-			
-			<form>
-				<label for="webmail">TUP mail:
-				<input type="email" name="webmail">
-				</label>
-				<br>
-				<br>
-				<label for="pass">Password:
-				<input type="password" name="pass">
-				</label>
-				
+			<button style="font-size: 10px;" id="ctolog" class="btn btn-default">Go Back</button>
+			<h1 style="color: white;" align="center">Register</h1>
+			<h4 style="color: white;" align="center">Become a part of the funnation! </h4>
+			<br />
+			<br />
+			<form action="<?php echo base_url();?>" class="formy">
+				<div class="form-group">
+				<label for="LastName">Last Name:</label>
+				<input type="text" class="form-control" id="lastname" placeholder="Enter Last Name..." name="lname" />
+				</div>
+				<div class="form-group">
+				<label for="FirstName">First name:</label>
+				<input type="text" class="form-control" id="firstname" placeholder="Enter First Name..." name="fname" />
+				</div>
+				<div class="form-group">
+				<label for="MidName">Middle name:</label>
+				<input type="text" class="form-control" id="midname" placeholder="Enter Middle Name..." name="mname" />
+				</div>
+				<div class="form-group">
+				<label for="username">Alias or Username:</label>
+				<input type="text" class="form-control" id="username" placeholder="Enter Username..." name="username" />
+				</div>
+				<div class="form-group">
+				<label for="tupmail">TUP Webmail:</label>
+				<input type="email" class="form-control" id="tupmail" placeholder="Enter TUP Webmail..." name="tupmail" />
+				</div>
+				<div class="form-group">
+				<label for="pass">Password:</label>
+				<input type="password" class="form-control" id="pass" placeholder="Enter Password..." name="pass" />
+				</div>
+				<div class="form-group">
+				<label for="conpass">Confirm Password:</label>
+				<input type="password" class="form-control" id="conpass" placeholder="Enter Password..." name="conpass" />
+				</div>
+				<br />
+			<br />
+				<button style="margin-left: 38%;" type="submit" class="btn btn-default btn-success">Submit</button>
 			</form>
+			<br />
+			<br />
 		</div>
 		
+		
+		
+		
+		
 	</div>
-                           
-<!--end of reg and log-->
-	
-	
+	<!--end of reg and log-->
+		<br />
+		<br />
+		<br />
+	<div class="row bottom" >
+		
+		<br />
+		<div class="line" >
+			<div class="m-1 s-12" >
+				<br />
+			</div>
+			<div class="m-5 s-12 bottommer" >
+					&copy;2017 <a href="<?php echo base_url();?>">tuplive.com</a> by TUP-Manila COS IT3A Team Ebina. All rights reserved.
+			</div>
+			<div class="m-4 s-12 bottommer" >
+					<br />
+			</div>
+			<div class="m-2 s-12 bottommer" >
+					Developed by Team Ebina.
+			</div>
+		</div>
+		<br />
+		
+	</div>
+	</div>
       <script type="text/javascript" src="<?php echo base_url('bootstrap/js/responsee.js');?>"></script>               
       
 	  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -164,8 +271,9 @@
 	
 	<script>
 		$(document).ready(function(){
-			$("#panel1").delay(1000).animate({top: '50%', height: '0%' });
-			$("#panel2").delay(1000).animate({height: '0%' });
+			$("#panel1").delay(1000).animate({top: '-50%', height: '0%' });
+			$("#panel2").delay(1000).animate({top: '100%',height: '0%' });
+			
 			$("#reg").hide();
 			$("#ctoreg").click(function(){
 				$("#log").slideUp("medium");
@@ -175,9 +283,20 @@
 				$("#reg").slideUp("medium");
 				$("#log").delay(500).slideDown("medium");
 				});
+			$("#tempo").click(function(e){
+				$("#panel1").animate({top: '0%', height: '50%' });
+				$("#panel2").animate({top: '50%',height: '50%' });
+				 e.preventDefault(); //will stop the link href to call the blog page
+
+				setTimeout(function () {
+				window.location.href = "<?php echo base_url('logged'); ?>"; //will redirect to your blog page (an ex: blog.html)
+					}, 1000); //will call the function after 2 secs.
+				});
+			
 		});
 
 	</script>
 	
-   </body>
+   
+</body>
 </html>
