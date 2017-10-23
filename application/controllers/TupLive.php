@@ -11,6 +11,7 @@ class Tuplive extends CI_Controller {
 	public function index()
 	{	
 
+
 		$this->load->view('include/startup');
 
 	}
@@ -24,4 +25,28 @@ class Tuplive extends CI_Controller {
 	{
 		$this->load->view('include/about');	
 	}
+
+	
+	public function about()
+	{
+		$this->load->view('include/about.html');		
+	}	
+	
+	public function admin()
+	{
+		$this->load->view('include/admin.html');		
+	}	
+	
+	public function adminacctlist()
+	{
+		$this->load->view('include/adminacctlist.html');		
+	}	
+	
+	public function adminwritenews()
+	{
+		$this->load->view('include/adminwritenews.html');		
+	}
+	
+	
+
 }
