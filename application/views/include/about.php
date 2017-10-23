@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<title>TUP Live!</title>
-	<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
 	<link href="<?php echo base_url('bootstrap/css/bootstrap.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/bootstrap-theme.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/custom.css'); ?>" rel="stylesheet" />
@@ -10,7 +11,7 @@
 	<link href="<?php echo base_url('bootstrap/css/icons.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/style.css'); ?>" rel="stylesheet" />
 	<link href="<?php echo base_url('bootstrap/css/response.css'); ?>" rel="stylesheet" />
-	<link rel="shortcut icon" href="<?php echo base_url('bootstrap/css/logo_1.ico'); ?>">
+	<link rel="shortcut icon" href="<?php echo base_url('bootstrap/css/tup.ico'); ?>">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="../TupLive/TLimages/tup.ico">
 	<script src="<?php echo base_url('bootstrap/js/jquery.min.js'); ?>"></script>
@@ -40,8 +41,11 @@
       </script>
 	
 
-</head>
+
 <style>
+	body{
+		background: url(TLimages/bg.jpg)
+	}
 	.botroundy{
 		border-radius: 0 0 25px 25px;
 	}
@@ -54,7 +58,17 @@
 		height: 50px;
 	}
 	body{
-		background-color: #1a1a1a;
+background-color: #1a1a1a;
+		background-image: url('TLimages/bg.jpg');
+		font-family:"Montserrat";
+		 no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;  
+		color: #ffffff;
+		overflow-x: hidden;
 		
 	}
 	.headcolor{
@@ -129,8 +143,9 @@
 		position: relative;
 	}
 	.dexy ul li a{
-		font-size: 11px;
+		font-size: 14px;
 		width: 100%;
+		text-align: center;
 	}
 	.para{
 		font-size: 10px;
@@ -157,31 +172,6 @@
 		width: 200px;
 	}
 
-	.our {
-		font-family: Arial;
-		font-weight: light;
-		font-size: 30px;
-		color: black;
-		margin-left: 37%;
-		
-	}
-	
-	.our2 {
-		font-family: Arial;
-		font-weight: light;
-		font-size: 30px;
-		color: black;
-		margin-left: 40%;
-	}
-
-	.our3 {
-		font-family: Arial;
-		font-weight: light;
-		font-size: 30px;
-		color: black;
-		margin-left: 42%;
-	}
-	
 	.title {
 		font-family: Montserrat;
 		font-weight: bold;
@@ -325,9 +315,10 @@
 	}
 	
 	.glen {
-		margin-left: 150px;
 		width: 200px;
-		height: 200px;
+		height: 220px;
+		margin-left: 20%;
+		margin-bottom: 80px;
 	}
 	
 	.glen:hover {
@@ -335,18 +326,17 @@
 	}
 	
 	.glendesc {
-		color: black;
-		font-family: Montserrat;
-		font-weight: light;
-		width: 200px;
-		height: 200px;
+		width: 250px;
+		height: 250px;
 	}
 	
 	.dex {
-		margin-left: 25px;
+		margin-left: 20%;
+		margin-bottom: 80px;
 		width: 200px;
-		height: 200px;
+		height: 225px;
 	}
+	
 	
 	.dex:hover {
 		transform: scale(1.3);
@@ -356,14 +346,16 @@
 		color: black;
 		font-family: Montserrat;
 		font-weight: light;
-		width: 230px;
+		width: 220px;
 		height: 200px;
 	}
 
 	.tierce {
-		margin-left: 20px;
 		width: 200px;
-		height: 200px;
+		height: 225px;
+		margin-left: 20%;
+		margin-bottom: 80px;
+		
 	}
 	
 	.tierce:hover {
@@ -381,10 +373,11 @@
 	}
 	
 	.aein {
-		
 		width: 200px;
-		height: 200px;
-		margin-left: -20px;
+		height: 220px;
+		margin-left: 20%;
+		margin-bottom: 80px;
+		
 	}
 	
 	.aein:hover {
@@ -402,25 +395,43 @@
 	
 	.gel {
 		width: 200px;
-		height: 200px;
-		margin-left: -13px;
+		height: 225px;
+		margin-left: 40%;
+		margin-bottom: 80px;
+		
 	}
 	
 	.gel:hover {
+		-ms-transform: scale(2, 3); /* IE 9 */
+    -webkit-transform: scale(2, 3); 
 		transform: scale(1.3);
+		
 	}
 	
 	.geldesc {
-		color: black;
-		font-family: Montserrat;
-		font-weight: light;
-		width: 225px;
-		height: 150px;
-		margin-left: -20px;
+		width: 250px;
+		height: 250px;
+		margin-left: 20%;
 	}
 	
 	.titoldesc {
 		color: #800000;
+		text-align: center;
+		font-size: 23px;
+	}
+	
+	.titoldesc2 {
+		margin-top: -5px;
+		color: #800000;
+		text-align: center;
+		font-size: 23px;
+	}
+	
+	.titoldesc3 {
+		margin-top: 4px;
+		color: #800000;
+		text-align: center;
+		font-size: 23px;
 	}
 	
 	ul {
@@ -431,14 +442,15 @@
 		font-size: 15px;
 		font-weight: lighter;
 		font-family: Arial;
+		text-align: center;
+		color: black;
 	}
 	
 	.service1 {
-		width: 500px; 
-		height: 250px;
+		width: 100%; 
+		height: 100%;
 		border-radius: 10px;
 		display: block;
-		margin-left: 40px;
 		opacity:0.5;
 	}
 	
@@ -447,11 +459,10 @@
 	}
 	
 	.service2 {
-		width: 500px; 
-		height: 250px;
+		width: 100%; 
+		height: 100%;
 		border-radius: 10px;
 		display: block;
-		margin-left: 50px;
 		opacity:0.5;
 	}
 	
@@ -461,24 +472,31 @@
 	
 	.para1 {
 		font-size: 50px;
-		color: black;
+		color: #800000;
 		font-family: Montserrat;
 		font-weight: Lighter;
-		margin-left: 50px;
 	}
 	
 	.para2 {
 		font-size: 50px;
-		color: black;
+		color: #800000;
 		font-family: Montserrat;
 		font-weight: Lighter;
 		text-align: right;
 	}
+	.icons ul li{
+		height: 40px;
+		width: 40px;
+		display:inline-block;
+	}
 	
 }
-
+.navvy li{
+	font-size: 15px;
+}
 
 </style>
+</head>
 <body >
 	<div class="container">
 	<br />
@@ -486,50 +504,40 @@
 	<header>
 		<div class="line top">
 			<div class="box headcolor">
-				<div class="s-6 l-2" align="center" style="top: 50px;">
-					<img class="logo" src="<?php echo base_url('TLimages/tupweb.png'); ?>">
+				<div class="s-4 m-3 l-1" style="top: 50px;">
+					<img class="logo" src="<?php echo base_url('TLimages/tupweb.png'); ?>" alt="logo">
 				</div>
-				<div class="s-6 l-4">
-					<img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>">
-					<h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website<h4>
+				
+				<div class="s-8 m-8 l-4" >
+					<img class="logo2" src="<?php echo base_url('TLimages/livetitle.png'); ?>" alt="title">
+					<h4>The Technological University of the Philippines'<br />Live Streaming Broadcasting Website</h4>
 				</div>
 			</div>
 		</div>
+	
 	<!-- end of header -->
 			 
 	<!-- navigation -->
-		<div class="line">
-			<nav class="margin-bottom botroundy">
-			<p class="nav-text">MENU</p>
-				<div class="top-nav">
-					<ul >
-						<div class="dexy" align="center">
-							<li class="s-12 m-2"><a href="<?php echo base_url('TupLive'); ?>">Home</a></li>
-							<li class="s-12 m-2" ><a>Watchlist</a></li>
-							<li class="s-12 m-2" ><a>Community</a></li> 
-							<li class="s-12 m-2" ><a href="<?php echo base_url('about'); ?>">About Us</a></li>
-							<li class="s-12 m-2" ><a id="loginform" >Login</a>
-								<div class="login" >
-									<div class="arrow-up"></div>
-										<div class="formholder">
-											<div class="randompad">
-												<fieldset style="font-family: "Montserrat"">
-													<label name="email" style="color: black">Email</label>
-													<input type="email" value="example@example.com" />
-													<label name="password" style="color: black">Password</label>
-													<input type="password" />
-													<input type="submit" value="Login" />
-												</fieldset>
-											</div>
-										</div>
-								</div>
-							</li>
-							<li class="s-12 m-2"><a>Join Us</a></li>
-						</div>
-					</ul>
-				</div>
-			</nav>
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>">TUP Live!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navvy" >
+				<li><a style="font-size: 14px;" href="<?php echo base_url(); ?>">Now Streaming</a></li>
+				<li><a style="font-size: 14px;" href="<?php echo base_url('watchlist'); ?>">Watchlist</a></li>
+				<li><a style="font-size: 14px;" href="<?php echo base_url('request'); ?>">Request</a></li>
+				<li class="active"><a style="font-size: 14px;" href="<?php echo base_url('about'); ?>">About Us</a></li>
+			</ul>
+			</div>
 		</div>
+		</nav>
 	<!-- end of navigation -->
 	</header>
 
@@ -537,6 +545,7 @@
 
 		<!--Campus Section-->
 		
+			
 			<div class="box container2 headcolorroundywhite">
 			
 			<br />
@@ -592,13 +601,15 @@
 			<br />
 
 		<!--Identity Section-->
+		
 			<div class="box container2 headcolorroundygray">
 			
 			<br />
 			
 			<img src="<?php echo base_url('TLimages/identity.png'); ?>" alt="Our Identity" class="center">
 
-
+			<div class="row">
+			
 			<!--Sociable-->	
 			<div class="col-md-4 soc">	
 			
@@ -610,7 +621,7 @@
 								<h3 class="title2">Sociable</h3>
 								<p class="identdesc">We make every campuses updated through our announcements, and entertained <br /> 
 													 by our top videos.</p><br />
-								<button type="button" class="btn" id="butt1">Watchlist</button>
+								<button onclick="window.location.href='<?php echo base_url('watchlist')?>'" type="button" class="btn" id="butt1">Watchlist</button>
 			</div>
 
 			<!--Flexibility-->
@@ -627,7 +638,7 @@
 													 technology and gives privilege to <br /> 
 												     every TUPian students to watch <br />
 													 &amp; subscribe on our videos.</p><br />
-								<button type="button" class="btn" id="butt2">Community</button>				
+								<button onclick="window.location.href='https://web.facebook.com/TUPian/'" type="button" class="btn" id="butt2">Community</button>				
 			</div>
 
 			<!--Reliability-->
@@ -641,128 +652,109 @@
 								<img src="<?php echo base_url('TLimages/shakehands.png'); ?>" alt="Reliability" id="reliablepic"/> <br />
 								<h3 class="title2">Reliability</h3>
 								<p class="identdesc">Our videos are based on open source, reliable &amp; robust technologies</p><br>
-								<button type="button" class="btn" id="butt3">Join Us</button>	
+								<button onclick="window.location.href='<?php echo base_url('request')?>'" type="button" class="btn" id="butt3">Join Us</button>	
+			</div>
 			</div>
 			</div>
 
 			<br />
-
+			
 		<!--Team Section-->
-		
+			
 			<div class="box container2 headcolorroundywhite">
 			
 			<br />
 			
 			<img src="<?php echo base_url('TLimages/team.png'); ?>" alt="Our Team" class="center">
-			
-			<br />
-			<br />
+
 			<br />
 			<br />
 				
-	 		<!--Division of Picture-->
+				<!--Glen Picture-->	
+				
 				
 				<div class="row">
+				
+					<div class="col-md-6 glen">					
+			
+					<br />
+					<br />
+										<img src="<?php echo base_url('TLimages/glen.png'); ?>" alt="Glen" id="glendesc"/> <br />
+										<h1 class="titoldesc">Glen Jester</h1>
+										<h5 class="roledesc">Back-end Developer</h5>
+										<br />
+					</div>
 					
-					<!--Glen Pic-->
+				<!--Dex Picture-->
+				
+					<div class="col-md-6 dex">	
 					
-						<div class="col-md-3 glen">
-						
-							<img src="<?php echo base_url('TLimages/glen.png'); ?>" alt="Glen" id="glen"/>
-						
-						</div>	
-						
-						
-						<div class="col-md-3 glendesc">
-						
-							<h1 class="titoldesc"> Glen Jester Ebina </h1>
-							<br />
-								<ul> <li class="roledesc"> Developer (back end) </li>
-								</ul>	
-						</div>
-						
-					<!--Dexxy Pic-->
-					
-						<div class="col-md-3 dex">
-						
-							<img src="<?php echo base_url('TLimages/dex.jpg'); ?>" alt="Dex" id="dex"/>
+					<br />
+					<br />
+										<img src="<?php echo base_url('TLimages/dex.jpg'); ?>" alt="Dex"/> <br />
+										<h1 class="titoldesc">John Xedricks</h1>
+										<h5 class="roledesc">Front-end Developer</h5>
+										<br />
+					</div>
 							
-						</div>
-						
-						<div class="col-md-3 dexdesc">
-						
-							<h1 class="titoldesc"> John Xedricks Fornillos </h1>
-							<br />
-								<ul> <li class="roledesc"> Developer (front end) </li>
-								</ul>		
-											
-						</div>
-					
 				</div>
 				
 				<br />
 				<br />
-				<br />
-				<br />
+				
+				<div class="row">
+
+				
+				<!--Tierce Picture-->
 				
 				<div class="row">
 				
-					<!--Tierce Pic-->
+					<div class="col-md-6 tierce">	
 					
-						<div class="col-md-2 tierce">
-						
-							<img src="<?php echo base_url('TLimages/tierce.jpg'); ?>" alt="Tierce" id="tierce"/>
-							
+					<br />
+					<br />
+										<img src="<?php echo base_url('TLimages/tierce.jpg'); ?>" alt="Tierce"/> <br />
+										<h1 class="titoldesc2">Mary Tierce</h1>
+										<h5 class="roledesc">Integrator Designer</h5>
+										<br />
+					</div>
+				
+				<!--Aein Picture-->
+				
+					<div class="col-md-6 aein">
+					
+					<br />
+					<br />
+										<img src="<?php echo base_url('TLimages/aein.png'); ?>" alt="Aein"/> <br />
+										<h1 class="titoldesc2">Aeinreb</h1>
+										<h5 class="roledesc">Integrator Designer</h5>
+										<br />
+					</div>
+				</div>
+					
+				<!--Gel Picture-->
+					
+					<div class="row">
+					
+					<div class="col-md-12 gel">
+					
+					<br />
+					<br />
+										<img src="<?php echo base_url('TLimages/gel.png'); ?>" alt="Angel"/> <br />
+										<h1 class="titoldesc3">Mary Angeline</h1>
+										<h5 class="roledesc">Integrator Designer</h5>
+										<br />
+										
 						</div>
-						
-						<div class="col-md-2 tiercedesc">
-						
-							<h1 class="titoldesc"> Mary Tierce Cueto </h1>
-								<ul> <li class="roledesc"> Integrator Designer </li>
-								</ul>
-							
 						</div>
 					
-					<!--Aeinreb Pic-->
+					</div>
+					<br />
+					<br />
 					
-						<div class="col-md-4 aein">
-						
-							<img src="<?php echo base_url('TLimages/aein.png'); ?>" alt="Aein" id="aein"/>
-							
-						</div>
-						
-						<div class="col-md-2 aeindesc">
-						
-							<h1 class="titoldesc"> Aeinreb Mangaco </h1>
-								<ul> <li class="roledesc"> Integrator Designer </li>
-								</ul>
-							
-						</div>
-					
-					<!--Angel Pic-->
-					
-						<div class="col-md-4 gel">
-						
-							<img src="<?php echo base_url('TLimages/gel.png'); ?>" alt="Gel" id="gel"/>
-							
-						</div>
-						
-						<div class="col-md-2 geldesc">
-						
-							<h1 class="titoldesc"> Mary Angeline Villoria </h1>
-								<ul> <li class="roledesc"> Integrator Designer </li>
-								</ul>
-							
-						</div>
-						
-					
-				</div>	
+				</div>
 				<br />
-			</div>
-
-		<br />
-		<br />
-
+				
 		<div class="line">
 			<div class="margin">
 			
@@ -770,82 +762,91 @@
 		
 				<div class="box container2 headcolorroundygray">
 						<br />	
+					
 						<img src="<?php echo base_url('TLimages/service.png'); ?>" alt="Our service" class="center">
 
 						<br />
 						<br />
 						
-							<div class="col-md-6">
-								<div class="center-block">
-									<img src="<?php echo base_url('TLimages/livestream.png'); ?>" alt="Livestream" class="service1">
-								</div>
-							</div>
-							
-							<br />
-							<br />
-							
-							<div class="col-md-6" style="width: 500px; height:250px;">
-								<div>
-									<p class="para1">Real-time live streaming</p>
-								</div>
-							</div>
-							
-							<div class="col-md-6" style="width: 500px; height:250px;">
-								<div>
-									<p class="para2">Latest news updates</p>
-								</div>
-							</div>
-							
-							
+						<div class="row">
+						
+							<!--First Pic-->
 							
 							<div class="col-md-6">
-								<div class="center-block">
-									<img src="<?php echo base_url('TLimages/news.jpg'); ?>" alt="Livestream" class="service2">
-								</div>
-								<br />
+						
+							<br />
+							<br />
+											<img src="<?php echo base_url('TLimages/livestream.png'); ?>" alt="Our service" class="service1"/> <br />
 							</div>
 							
+							<div class="col-md-6">
+						
+							<br />
+							<br />
+											<h1 class="para1">Real-time live streaming</h1>
+											<br />
+											
+							</div>
+						</div>	
 
-					</div>
+						<div class="row">
+						
+							<!--Second Pic-->
+							
+							<div class="col-md-6">
+						
+							<br />
+							<br />
+											<h1 class="para2">Latest News Updates</h1>
+											<br />
+											
+							</div>
+							
+							<div class="col-md-6">
+						
+							<br />
+							<br />
+											<img src="<?php echo base_url('TLimages/news.jpg'); ?>" alt="Our service" class="service2"/> <br />
+							</div>
+						</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	
-	<footer >
+	<footer class="align" >
 		<div class="box" style="width:100%">
-			<div class="line">
-				<div class="s-12 m-2 ">
+			<div class="line"><br />
+				<div class="s-11 m-11 l-3 " style="margin:20px;">
 					GENERAL<br /><br />
 					<div class="footersize">
-						<a href="#">Home</a><br /><br />
-						<a href="#">Blog</a><br /><br />
-						<a href="#">FAQ</a><br /><br />
-						<a href="#">Contact Us!</a><br /><br />
+						<a href="<?php echo base_url(); ?>">Now Streaming</a><br /><br />
+						<a href="<?php echo base_url('watchlist'); ?>">Watchlist</a><br /><br />
+						<a href="<?php echo base_url('request'); ?>">FAQ</a><br /><br />
+						<a href="<?php echo base_url('about'); ?>">Contact Us!</a><br /><br />
 					</div>
 				</div>
-				<div class="s-12 m-2 ">
+				<div class="s-11 m-11 l-3"  style="margin:20px;">
 					KNOW US<br /><br />
 					<div class="footersize">
-						<a href="#">About Us</a><br /><br />
-						<a href="#">Disclaimer</a><br /><br />
-						<a href="#">Terms and Conditions</a><br /><br />
-						<a href="#">Site Help</a><br /><br />
+						<a href="<?php echo base_url('about'); ?>">About Us</a><br /><br />
+						<a href="<?php echo base_url('about'); ?>">Disclaimer</a><br /><br />
+						<a href="<?php echo base_url('about'); ?>">Terms and Conditions</a><br /><br />
+						<a href="<?php echo base_url('about'); ?>">Site Help</a><br /><br />
 					</div>
 				</div>
-				<div class="s-12 m-3">
+				<div class="s-11 m-11 l-3"  style="margin:20px;">
 					CONTACT US:<br /><br />
+						<div class="icons">
+							<ul>
+								<li><a href="www.fb.com"><img src="<?php echo base_url('TLimages/fb.png'); ?>" alt="fb"/></a></li> 
+								<li><a href="https://github.com/jetrocks/tuplive"><img src="<?php echo base_url('TLimages/git.png'); ?>" alt="git" /></a></li>
+								<li><a href="www.twitter.com"><img src="<?php echo base_url('TLimages/twitter.png'); ?>" alt="twitter" /></a></li>
+								
+							</ul>
+						</div>
 				</div>
-				<div class="s-12 m-5">
-					SEND US YOUR THOUGHTS: <br /><br />
-					<div class="footersize">
-						<form action="#" method="post">
-							<input type="text" name="email" maxlength="30" placeholder="Email" /><br /><br />
-							<textarea name="message" placeholder="Message"></textarea><br />
-							<div>&nbsp;</div><button>Send</button>
-						</form>
-					</div>
-				</div>
-			
+				
 			</div>
 		</div>
 
