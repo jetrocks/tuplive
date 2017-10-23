@@ -51,8 +51,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'TupLive';
 $route['course/create_course'] = 'course/create_course';
+$route['inserto'] = 'Sched/inserting';
 $route['login'] = 'TupLive/login';
 $route['logged'] = 'TupLive/logged';
 $route['about'] = 'TupLive/about';
+$route['request_success'] = 'TupLive/request_success';
+
+//Admin
+$route['admin'] = 'Admin';
+$route['pendview/(:any)'] = 'Admin/pendview/$1';
+$route['success/(:any)'] = 'Admin/success/$1';
+$route['decline/(:any)'] = 'Admin/decline/$1';
+$route['canceled/(:any)'] = 'Admin/canceled/$1';
+$route['adminproglist'] = 'Admin/adminproglist';
+$route['adminprogview/(:any)'] = 'Admin/adminprogview/$1';
+
+
+$route['about'] = 'TupLive/about';
+$route['watchlist'] = 'TupLive/watchlist';
+$route['request'] = 'TupLive/request';
+$route['schedrequest/(:any)'] = 'Scheduling/index/$1';
+$route['addpending'] = 'Scheduling/add_pending';
+$route['confirming'] = 'TupLive/confirmation';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
